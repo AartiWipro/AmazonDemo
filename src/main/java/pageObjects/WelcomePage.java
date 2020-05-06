@@ -8,6 +8,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
+ * The Welcome page class contains all the Xpath and method related to welcome page.
  * @author Aarti
  */
 public class WelcomePage {

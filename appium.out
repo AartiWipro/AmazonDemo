@@ -1,2 +1,7 @@
-2020-05-06 23:18:04 INFO  VerifyCountryRegion:37 - Starting server
-2020-05-06 23:18:57 INFO  VerifyCountryRegion:39 - Connecting with device
+2020-05-07 00:51:43 INFO  VerifyCountryRegion:38 - Starting server
+2020-05-07 00:52:30 INFO  VerifyCountryRegion:40 - Connecting with device
+2020-05-07 00:53:15 INFO  VerifyCountryRegion:55 - Welcome Page will display
+2020-05-07 00:53:20 INFO  VerifyCountryRegion:61 - Home Page will display
+2020-05-07 00:53:29 INFO  VerifyCountryRegion:64 - hamburger menu will display
+2020-05-07 00:53:58 INFO  VerifyCountryRegion:100 - closing driver
+2020-05-07 00:54:01 INFO  VerifyCountryRegion:102 - stopping server

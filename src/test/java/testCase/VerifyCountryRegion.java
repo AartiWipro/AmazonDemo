@@ -13,12 +13,12 @@ import base.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import pageObjects.HomePage;
-import pageObjects.SearchPanel;
+import pageObjects.HamburgerMenu;
 import pageObjects.WelcomePage;
-import resources.Log4j;
 import utilities.Utilities;
 
 /**
+ * The VerifyCountryRegion class is used for setting Country/region as Australia
  * @author Aarti
  *
  */
@@ -29,6 +29,7 @@ public class VerifyCountryRegion extends Base {
 	public AndroidDriver<AndroidElement> driver;
 	
 	/**
+	 * The method is use for starting the server and initiating the driver .
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
@@ -41,6 +42,7 @@ public class VerifyCountryRegion extends Base {
 	}
 
 	/**
+	 * The test case method will verify Country/region as Australia after changing the default Country setting.
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
@@ -48,16 +50,18 @@ public class VerifyCountryRegion extends Base {
 	public void verifyingCountry() throws InterruptedException, IOException {	
 		WelcomePage wp = new WelcomePage(driver);
 		HomePage hp = new HomePage(driver);
-		SearchPanel sp = new SearchPanel(driver);
+		HamburgerMenu sp = new HamburgerMenu(driver);
 		Utilities ut = new Utilities(driver);
-
+		logger.info("Welcome Page will display");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		if (wp.signIn.isDisplayed()) {
 			wp.signIn.click();
 		} else
 			System.out.print("In Home screen");
+		logger.info("Home Page will display");
 		Thread.sleep(3000);
 		Utilities.Click(hp.searchPlate);
+		logger.info("hamburger menu will display");
 		Utilities.Click(sp.setting);
 		Utilities.Click(sp.countryLanguage);
 		Utilities.Click(sp.countryRegion);
@@ -87,12 +91,15 @@ public class VerifyCountryRegion extends Base {
 	}
 	
 	/**
+	 * The method is use for stopping the server and closing the driver.
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
 	@AfterTest
 	public void endSession() throws InterruptedException, IOException {
+		logger.info("closing driver");
 		closeDriver();
+		logger.info("stopping server");
 		service.stop();
 	}
 }

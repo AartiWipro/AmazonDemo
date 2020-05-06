@@ -18,6 +18,7 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 /**
+ * The Base  class contains all the method related to setting the Capabilities and starting/stopping the server and driver.
  * @author Aarti
  *
  */
@@ -28,7 +29,8 @@ public class Base {
 
 	// Need Dependency slf4j :api, simple. commons : lang3, io, validator.
 	/**
-	 * @return
+	 * The StartServer method is use for starting the server.
+	 * @return : will return the sever 
 	 */
 	public AppiumDriverLocalService StartServer() {
 		service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
@@ -39,8 +41,9 @@ public class Base {
 	}
 
 	/**
-	 * @param appName
-	 * @return
+	 * The Capabilities method is use for setting the device Capabilities and connecting server with the device .
+	 * @param appName : will define string value
+	 * @return : will return the driver
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
@@ -63,7 +66,8 @@ public class Base {
 	}
 
 	/**
-	 * @param sc
+	 * The method is use for stopping the server and closing the driver.
+	 * @param sc : will define string value
 	 * @throws IOException
 	 */
 	public static void GetScreenShot(String sc) throws IOException {
@@ -71,6 +75,9 @@ public class Base {
 		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screenShots\\" + sc + ".png"));
 	}
 
+	/**
+	 * The method is use for closing the driver.
+	 */
 	public void closeDriver() {
 		driver.quit();
 	}

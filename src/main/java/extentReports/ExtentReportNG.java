@@ -18,6 +18,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 /**
+ * The ExtentReportNG class is used for creating Extent report with all test case status.
  * @author Aarti
  *
  */
@@ -26,10 +27,11 @@ public class ExtentReportNG implements IReporter {
 	ExtentHtmlReporter htmlReporter;
 
 	/**
-	 * @param <XmlSuite>
-	 * @param XmlSuite
-	 * @param suites
-	 * @param outputDirectory
+	 * The generateReport method is used for generating the Extent report
+	 * @param <XmlSuite> : will define List<XmlSuite> value
+	 * @param XmlSuite : will define tag <suite> value
+	 * @param suites : will define List<ISuite> value
+	 * @param outputDirectory : will define String value
 	 */
 	   @Override
 	   public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
@@ -52,8 +54,9 @@ public class ExtentReportNG implements IReporter {
 	}
 
 	/**
-	 * @param tests
-	 * @param status
+	 * The buildTestModes method will create the build for generateReport method. 
+	 * @param tests : will define IResultMap value
+	 * @param status : will define Status value
 	 */
 	private void buildTestModes(IResultMap tests, Status status) {
 		ExtentTest test;

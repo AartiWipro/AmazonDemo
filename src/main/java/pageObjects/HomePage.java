@@ -8,6 +8,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
+ * The HomePage class contains all the Xpath and method related to home page.
  * @author Aarti
  *
  */

@@ -10,13 +10,14 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
+ * The HamburgerMenu class contains all the Xpath and method related to Hamburger sMenu.
  * @author Aarti
  *
  */
-public class SearchPanel {
+public class HamburgerMenu  {
 
 	// Concatenate driver
-	public SearchPanel(AndroidDriver<AndroidElement> driver) {		
+	public HamburgerMenu(AndroidDriver<AndroidElement> driver) {		
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
