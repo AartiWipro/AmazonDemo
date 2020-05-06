@@ -1,566 +1,566 @@
-2020-04-30 16:51:10:470 [Appium] Welcome to Appium v1.17.0
-2020-04-30 16:51:10:472 [Appium] Non-default server args:
-2020-04-30 16:51:10:472 [Appium]   logFile: C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\test\resources\logs\logResult.txt
-2020-04-30 16:51:10:473 [Appium]   localTimezone: true
-2020-04-30 16:51:10:755 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
-2020-04-30 16:51:10:885 [HTTP] --> GET /wd/hub/status
-2020-04-30 16:51:10:885 [HTTP] {}
-2020-04-30 16:51:10:888 [GENERIC] Calling AppiumDriver.getStatus() with args: []
-2020-04-30 16:51:10:890 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.17.0"}}
-2020-04-30 16:51:10:897 [HTTP] <-- GET /wd/hub/status 200 9 ms - 68
-2020-04-30 16:51:10:897 [HTTP] 
-2020-04-30 16:51:12:025 [HTTP] --> POST /wd/hub/session
-2020-04-30 16:51:12:025 [HTTP] {"desiredCapabilities":{"app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","platformName":"Android","deviceName":"Android"},"capabilities":{"firstMatch":[{"appium:app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appium:appActivity":"com.amazon.mShop.home.HomeActivity","appium:appPackage":"com.amazon.mShop.android.shopping","appium:automationName":"UiAutomator2","appium:deviceName":"Android","platformName":"android"}]}}
-2020-04-30 16:51:12:027 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","platformName":"Android","deviceName":"Android"},null,{"firstMatch":[{"appium:app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appium:appActivity":"com.amazon.mShop.home.HomeActivity","appium:appPackage":"com.amazon.mShop.android.shopping","appium:automationName":"UiAutomator2","appium:deviceName":"Android","platformName":"android"}]}]
-2020-04-30 16:51:12:028 [BaseDriver] Event 'newSessionRequested' logged at 1588245672027 (16:51:12 GMT+0530 (India Standard Time))
-2020-04-30 16:51:19:435 [Appium] Appium v1.17.0 creating new AndroidUiautomator2Driver (v1.44.2) session
-2020-04-30 16:51:19:439 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
-2020-04-30 16:51:19:439 [BaseDriver] Creating session with W3C capabilities: {
-2020-04-30 16:51:19:440 [BaseDriver]   "alwaysMatch": {
-2020-04-30 16:51:19:440 [BaseDriver]     "platformName": "android",
-2020-04-30 16:51:19:440 [BaseDriver]     "appium:app": "C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk",
-2020-04-30 16:51:19:440 [BaseDriver]     "appium:appActivity": "com.amazon.mShop.home.HomeActivity",
-2020-04-30 16:51:19:441 [BaseDriver]     "appium:appPackage": "com.amazon.mShop.android.shopping",
-2020-04-30 16:51:19:441 [BaseDriver]     "appium:automationName": "UiAutomator2",
-2020-04-30 16:51:19:441 [BaseDriver]     "appium:deviceName": "Android"
-2020-04-30 16:51:19:442 [BaseDriver]   },
-2020-04-30 16:51:19:442 [BaseDriver]   "firstMatch": [
-2020-04-30 16:51:19:442 [BaseDriver]     {}
-2020-04-30 16:51:19:442 [BaseDriver]   ]
-2020-04-30 16:51:19:443 [BaseDriver] }
-2020-04-30 16:51:19:462 [BaseDriver] Session created with session id: fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:19:483 [BaseDriver] Using local app 'C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk'
-2020-04-30 16:51:19:483 [UiAutomator2] Checking whether app is actually present
-2020-04-30 16:51:19:512 [ADB] Found 1 'build-tools' folders under 'C:\Users\AA20005985\AppData\Local\Android\Sdk' (newest first):
-2020-04-30 16:51:19:512 [ADB]     C:/Users/AA20005985/AppData/Local/Android/Sdk/build-tools/29.0.3
-2020-04-30 16:51:19:513 [ADB] Using 'adb.exe' from 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe'
-2020-04-30 16:51:19:513 [AndroidDriver] Retrieving device list
-2020-04-30 16:51:19:514 [ADB] Trying to find a connected android device
-2020-04-30 16:51:19:515 [ADB] Getting connected devices...
-2020-04-30 16:51:20:610 [ADB] Connected devices: [{"udid":"JBAAGF07P816YZF","state":"device"}]
-2020-04-30 16:51:20:611 [AndroidDriver] Using device: JBAAGF07P816YZF
-2020-04-30 16:51:20:612 [ADB] Using 'adb.exe' from 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe'
-2020-04-30 16:51:20:613 [ADB] Setting device id to JBAAGF07P816YZF
-2020-04-30 16:51:20:615 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell getprop ro.build.version.sdk'
-2020-04-30 16:51:21:364 [ADB] Current device property 'ro.build.version.sdk': 28
-2020-04-30 16:51:21:365 [ADB] Getting device platform version
-2020-04-30 16:51:21:365 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell getprop ro.build.version.release'
-2020-04-30 16:51:22:139 [ADB] Current device property 'ro.build.version.release': 9
-2020-04-30 16:51:22:140 [ADB] Device API level: 28
-2020-04-30 16:51:22:140 [UiAutomator2] Relaxing hidden api policy
-2020-04-30 16:51:22:141 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings put global hidden_api_policy_pre_p_apps 1'
-2020-04-30 16:51:23:038 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings put global hidden_api_policy_p_apps 1'
-2020-04-30 16:51:23:862 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings put global hidden_api_policy 1'
-2020-04-30 16:51:24:649 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF wait-for-device'
-2020-04-30 16:51:25:789 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell echo ping'
-2020-04-30 16:51:26:623 [AndroidDriver] Pushing settings apk to device...
-2020-04-30 16:51:26:624 [ADB] Getting install status for io.appium.settings
-2020-04-30 16:51:26:625 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.settings'
-2020-04-30 16:51:27:375 [ADB] 'io.appium.settings' is installed
-2020-04-30 16:51:27:375 [ADB] Getting package info for 'io.appium.settings'
-2020-04-30 16:51:27:375 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.settings'
-2020-04-30 16:51:28:224 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.1.0' >= '3.1.0')
-2020-04-30 16:51:28:225 [ADB] There is no need to install/upgrade 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
-2020-04-30 16:51:28:225 [ADB] Getting IDs of all 'io.appium.settings' processes
-2020-04-30 16:51:28:226 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell 'pgrep --help; echo $?''
-2020-04-30 16:51:29:049 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell pgrep -f io\\.appium\\.settings'
-2020-04-30 16:51:30:102 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
-2020-04-30 16:51:30:103 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell appops set io.appium.settings android\:mock_location allow'
-2020-04-30 16:51:30:904 [Logcat] Starting logcat capture
-2020-04-30 16:51:32:015 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8200
-2020-04-30 16:51:32:015 [ADB] Forwarding system: 8200 to device: 6790
-2020-04-30 16:51:32:016 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF forward tcp\:8200 tcp\:6790'
-2020-04-30 16:51:32:719 [ADB] Getting install status for io.appium.uiautomator2.server
-2020-04-30 16:51:32:719 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.uiautomator2.server'
-2020-04-30 16:51:33:504 [ADB] 'io.appium.uiautomator2.server' is installed
-2020-04-30 16:51:33:504 [ADB] Getting package info for 'io.appium.uiautomator2.server'
-2020-04-30 16:51:33:505 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.uiautomator2.server'
-2020-04-30 16:51:34:292 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.5.5' >= '4.5.5')
-2020-04-30 16:51:34:293 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
-2020-04-30 16:51:34:294 [ADB] Checking app cert for C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.5.5.apk
-2020-04-30 16:51:34:296 [ADB] Using 'apksigner.jar' from 'C:\Users\AA20005985\AppData\Local\Android\Sdk\build-tools\29.0.3\lib\apksigner.jar'
-2020-04-30 16:51:34:297 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-11.0.7\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\AA20005985\\AppData\\Local\\Android\\Sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\AA20005985\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.5.5.apk
-2020-04-30 16:51:35:832 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
-2020-04-30 16:51:35:832 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
-2020-04-30 16:51:35:833 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
-2020-04-30 16:51:35:833 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
-2020-04-30 16:51:35:833 [ADB] 
-2020-04-30 16:51:35:834 [ADB] 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.5.5.apk' is signed with the default certificate
-2020-04-30 16:51:35:834 [ADB] Getting install status for io.appium.uiautomator2.server.test
-2020-04-30 16:51:35:834 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.uiautomator2.server.test'
-2020-04-30 16:51:36:629 [ADB] 'io.appium.uiautomator2.server.test' is installed
-2020-04-30 16:51:36:629 [ADB] Checking app cert for C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
-2020-04-30 16:51:36:630 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-11.0.7\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\AA20005985\\AppData\\Local\\Android\\Sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\AA20005985\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
-2020-04-30 16:51:37:899 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
-2020-04-30 16:51:37:899 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
-2020-04-30 16:51:37:900 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
-2020-04-30 16:51:37:900 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
-2020-04-30 16:51:37:900 [ADB] 
-2020-04-30 16:51:37:900 [ADB] 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
-2020-04-30 16:51:37:900 [UiAutomator2] Server packages are not going to be (re)installed
-2020-04-30 16:51:37:906 [UiAutomator2] Waiting up to 30000ms for services to be available
-2020-04-30 16:51:37:907 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell pm list instrumentation'
-2020-04-30 16:51:38:722 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
-2020-04-30 16:51:38:723 [ADB] Checking app cert for C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk
-2020-04-30 16:51:38:724 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-11.0.7\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\AA20005985\\AppData\\Local\\Android\\Sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk
-2020-04-30 16:51:43:134 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
-2020-04-30 16:51:43:134 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
-2020-04-30 16:51:43:135 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
-2020-04-30 16:51:43:135 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
-2020-04-30 16:51:43:135 [ADB] 
-2020-04-30 16:51:43:136 [ADB] 'C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk' is signed with the default certificate
-2020-04-30 16:51:43:136 [ADB] Getting install status for com.amazon.mShop.android.shopping
-2020-04-30 16:51:43:137 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package com.amazon.mShop.android.shopping'
-2020-04-30 16:51:44:483 [ADB] 'com.amazon.mShop.android.shopping' is installed
-2020-04-30 16:51:44:483 [ADB] Getting package info for 'com.amazon.mShop.android.shopping'
-2020-04-30 16:51:44:484 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package com.amazon.mShop.android.shopping'
-2020-04-30 16:51:45:488 [ADB] The version name of the installed 'com.amazon.mShop.android.shopping' is greater or equal to the application version name ('18.14.0' >= '18.14.0')
-2020-04-30 16:51:45:488 [ADB] There is no need to install/upgrade 'C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk'
-2020-04-30 16:51:45:489 [AndroidDriver] Performing fast reset on 'com.amazon.mShop.android.shopping'
-2020-04-30 16:51:45:489 [ADB] Getting install status for com.amazon.mShop.android.shopping
-2020-04-30 16:51:45:490 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package com.amazon.mShop.android.shopping'
-2020-04-30 16:51:46:297 [ADB] 'com.amazon.mShop.android.shopping' is installed
-2020-04-30 16:51:46:298 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am force-stop com.amazon.mShop.android.shopping'
-2020-04-30 16:51:47:114 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell pm clear com.amazon.mShop.android.shopping'
-2020-04-30 16:51:48:667 [AndroidDriver] Performed fast reset on the installed 'com.amazon.mShop.android.shopping' application (stop and clear)
-2020-04-30 16:51:48:668 [UiAutomator2] Performing shallow cleanup of automation leftovers
-2020-04-30 16:51:48:871 [UiAutomator2] No obsolete sessions have been detected (Error: socket hang up)
-2020-04-30 16:51:48:871 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am force-stop io.appium.uiautomator2.server.test'
-2020-04-30 16:51:49:783 [UiAutomator2] Starting UIAutomator2 server 4.5.5
-2020-04-30 16:51:49:783 [UiAutomator2] Using UIAutomator2 server from 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.5.5.apk' and test from 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
-2020-04-30 16:51:49:783 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
-2020-04-30 16:51:49:784 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","JBAAGF07P816YZF","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
-2020-04-30 16:51:50:993 [WD Proxy] Matched '/status' to command name 'getStatus'
-2020-04-30 16:51:50:995 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
-2020-04-30 16:51:51:009 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
-2020-04-30 16:51:52:012 [WD Proxy] Matched '/status' to command name 'getStatus'
-2020-04-30 16:51:52:013 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
-2020-04-30 16:51:52:022 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
-2020-04-30 16:51:52:965 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
-2020-04-30 16:51:53:023 [WD Proxy] Matched '/status' to command name 'getStatus'
-2020-04-30 16:51:53:024 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
-2020-04-30 16:51:53:035 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
-2020-04-30 16:51:54:036 [WD Proxy] Matched '/status' to command name 'getStatus'
-2020-04-30 16:51:54:036 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
-2020-04-30 16:51:54:045 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
-2020-04-30 16:51:55:046 [WD Proxy] Matched '/status' to command name 'getStatus'
-2020-04-30 16:51:55:049 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
-2020-04-30 16:51:55:163 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"ready":true,"message":"UiAutomator2 Server is ready to accept commands"}}
-2020-04-30 16:51:55:164 [UiAutomator2] The initialization of the instrumentation process took 5380ms
-2020-04-30 16:51:55:164 [WD Proxy] Matched '/session' to command name 'createSession'
-2020-04-30 16:51:55:165 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8200/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF"}],"alwaysMatch":{}}}
-2020-04-30 16:51:55:190 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF"}],"alwaysMatch":{}}}}
-2020-04-30 16:51:55:191 [WD Proxy] Determined the downstream protocol as 'W3C'
-2020-04-30 16:51:55:206 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/appium/device/info] with no body
-2020-04-30 16:51:55:292 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"androidId":"14ff8c1ab084e929","manufacturer":"asus","model":"ASUS_X01BDA","brand":"asus","apiVersion":"28","platformVersion":"9","carrierName":"Jio 4G","realDisplaySize":"1080x2280","displayDensity":408,"networks":[{"type":0,"typeName":"MOBILE","subtype":13,"subtypeName":"LTE","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":"ims","isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"TRANSPORT_CELLULAR","networkCapabilities":"NET_CAPABILITY_IMS,NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","linkUpstreamBandwidthKbps":51200,"linkDownBandwidthKbps":102400,"signalStrength":-2147483648,"networkSpecifier":"2","SSID":null}},{"type":1,"typeName":"WIFI","subtype":0,"subtypeName":"","isConnected":true,"detailedState":"CONNECTED"...
-2020-04-30 16:51:55:294 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys window'
-2020-04-30 16:51:56:069 [AndroidDriver] Screen already unlocked, doing nothing
-2020-04-30 16:51:56:070 [UiAutomator2] Starting 'com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity and waiting for 'com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity'
-2020-04-30 16:51:56:071 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am start -W -n com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
-2020-04-30 16:51:58:929 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/appium/device/pixel_ratio] with body: {}
-2020-04-30 16:51:58:943 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":2.55}
-2020-04-30 16:51:58:944 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
-2020-04-30 16:51:58:945 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/appium/device/system_bars] with body: {}
-2020-04-30 16:51:58:956 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"statusBar":74}}
-2020-04-30 16:51:58:956 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
-2020-04-30 16:51:58:956 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/window/current/size] with body: {}
-2020-04-30 16:51:58:973 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"height":2086,"width":1080}}
-2020-04-30 16:51:58:974 [Appium] New AndroidUiautomator2Driver session created successfully, session fc9dfbdf-1276-43fd-8f4c-7919d21b471c added to master session list
-2020-04-30 16:51:58:975 [BaseDriver] Event 'newSessionStarted' logged at 1588245718975 (16:51:58 GMT+0530 (India Standard Time))
-2020-04-30 16:51:58:975 [W3C (fc9dfbdf)] Cached the protocol value 'W3C' for the new session fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:58:976 [W3C (fc9dfbdf)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left...
-2020-04-30 16:51:58:977 [HTTP] <-- POST /wd/hub/session 200 46953 ms - 1124
-2020-04-30 16:51:58:978 [HTTP] 
-2020-04-30 16:51:59:067 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:067 [HTTP] {}
-2020-04-30 16:51:59:068 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:069 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:069 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:069 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:081 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:082 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:083 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 15 ms - 1056
-2020-04-30 16:51:59:083 [HTTP] 
-2020-04-30 16:51:59:091 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:091 [HTTP] {}
-2020-04-30 16:51:59:092 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:093 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:094 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:094 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:111 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:112 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:114 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 22 ms - 1056
-2020-04-30 16:51:59:114 [HTTP] 
-2020-04-30 16:51:59:223 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:224 [HTTP] {}
-2020-04-30 16:51:59:225 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:225 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:226 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:226 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:243 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:244 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:245 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 21 ms - 1056
-2020-04-30 16:51:59:245 [HTTP] 
-2020-04-30 16:51:59:250 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:250 [HTTP] {}
-2020-04-30 16:51:59:251 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:251 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:251 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:252 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:268 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:269 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:270 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 20 ms - 1056
-2020-04-30 16:51:59:270 [HTTP] 
-2020-04-30 16:51:59:471 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:471 [HTTP] {}
-2020-04-30 16:51:59:472 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:473 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:473 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:473 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:487 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:488 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:489 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 17 ms - 1056
-2020-04-30 16:51:59:489 [HTTP] 
-2020-04-30 16:51:59:494 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:494 [HTTP] {}
-2020-04-30 16:51:59:495 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:495 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:496 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:496 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:515 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:516 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:517 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 23 ms - 1056
-2020-04-30 16:51:59:518 [HTTP] 
-2020-04-30 16:51:59:531 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:532 [HTTP] {}
-2020-04-30 16:51:59:533 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:533 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:533 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:534 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:549 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:550 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:551 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 19 ms - 1056
-2020-04-30 16:51:59:552 [HTTP] 
-2020-04-30 16:51:59:557 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:557 [HTTP] {}
-2020-04-30 16:51:59:557 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:558 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:558 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:559 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:577 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:578 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:579 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 22 ms - 1056
-2020-04-30 16:51:59:580 [HTTP] 
-2020-04-30 16:51:59:593 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/timeouts
-2020-04-30 16:51:59:593 [HTTP] {"implicit":10000}
-2020-04-30 16:51:59:597 [W3C (fc9dfbdf)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,10000,"fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:598 [BaseDriver] W3C timeout argument: {"implicit":10000}}
-2020-04-30 16:51:59:598 [BaseDriver] Set implicit wait to 10000ms
-2020-04-30 16:51:59:599 [W3C (fc9dfbdf)] Responding to client with driver.timeouts() result: null
-2020-04-30 16:51:59:603 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/timeouts 200 10 ms - 14
-2020-04-30 16:51:59:604 [HTTP] 
-2020-04-30 16:51:59:608 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:51:59:608 [HTTP] {}
-2020-04-30 16:51:59:609 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:609 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:51:59:610 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:51:59:610 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:51:59:628 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:51:59:629 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:51:59:630 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 21 ms - 1056
-2020-04-30 16:51:59:630 [HTTP] 
-2020-04-30 16:51:59:640 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:51:59:640 [HTTP] {"using":"id","value":"com.amazon.mShop.android.shopping:id/skip_sign_in_button"}
-2020-04-30 16:51:59:644 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["id","com.amazon.mShop.android.shopping:id/skip_sign_in_button","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:51:59:645 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:51:59:646 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:51:59:647 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:51:59:647 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}
-2020-04-30 16:52:00:088 [WD Proxy] Got response with status 404: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
-2020-04-30 16:52:00:089 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
-2020-04-30 16:52:00:090 [BaseDriver] Waited for 443 ms so far
-2020-04-30 16:52:00:594 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:00:596 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}
-2020-04-30 16:52:00:991 [WD Proxy] Got response with status 404: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
-2020-04-30 16:52:00:993 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
-2020-04-30 16:52:00:993 [BaseDriver] Waited for 1347 ms so far
-2020-04-30 16:52:01:495 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:01:496 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}
-2020-04-30 16:52:03:479 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"153eedf5-1bdf-4a21-bc97-a8e6105afbaf","element-6066-11e4-a52e-4f735466cecf":"153eedf5-1bdf-4a21-bc97-a8e6105afbaf"}}
-2020-04-30 16:52:03:480 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"153eedf5-1bdf-4a21-bc97-a8e6105afbaf","ELEMENT":"153eedf5-1bdf-4a21-bc97-a8e6105afbaf"}
-2020-04-30 16:52:03:481 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 3841 ms - 137
-2020-04-30 16:52:03:481 [HTTP] 
-2020-04-30 16:52:03:485 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/153eedf5-1bdf-4a21-bc97-a8e6105afbaf/displayed
-2020-04-30 16:52:03:485 [HTTP] {}
-2020-04-30 16:52:03:488 [W3C (fc9dfbdf)] Calling AppiumDriver.elementDisplayed() with args: ["153eedf5-1bdf-4a21-bc97-a8e6105afbaf","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:03:489 [WD Proxy] Matched '/element/153eedf5-1bdf-4a21-bc97-a8e6105afbaf/attribute/displayed' to command name 'getAttribute'
-2020-04-30 16:52:03:490 [WD Proxy] Proxying [GET /element/153eedf5-1bdf-4a21-bc97-a8e6105afbaf/attribute/displayed] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/153eedf5-1bdf-4a21-bc97-a8e6105afbaf/attribute/displayed] with body: {}
-2020-04-30 16:52:03:520 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":"true"}
-2020-04-30 16:52:03:521 [W3C (fc9dfbdf)] Responding to client with driver.elementDisplayed() result: true
-2020-04-30 16:52:03:522 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/153eedf5-1bdf-4a21-bc97-a8e6105afbaf/displayed 200 37 ms - 14
-2020-04-30 16:52:03:523 [HTTP] 
-2020-04-30 16:52:03:526 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:03:526 [HTTP] {}
-2020-04-30 16:52:03:527 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:03:527 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:03:528 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:03:528 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:03:542 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:03:543 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:03:544 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 18 ms - 1056
-2020-04-30 16:52:03:544 [HTTP] 
-2020-04-30 16:52:03:549 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:03:549 [HTTP] {"using":"id","value":"com.amazon.mShop.android.shopping:id/skip_sign_in_button"}
-2020-04-30 16:52:03:549 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["id","com.amazon.mShop.android.shopping:id/skip_sign_in_button","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:03:550 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:03:550 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:03:550 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:03:551 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}
-2020-04-30 16:52:03:602 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"2d8be881-e43e-4835-ab59-91ad9dde2076","element-6066-11e4-a52e-4f735466cecf":"2d8be881-e43e-4835-ab59-91ad9dde2076"}}
-2020-04-30 16:52:03:603 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"2d8be881-e43e-4835-ab59-91ad9dde2076","ELEMENT":"2d8be881-e43e-4835-ab59-91ad9dde2076"}
-2020-04-30 16:52:03:604 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 55 ms - 137
-2020-04-30 16:52:03:604 [HTTP] 
-2020-04-30 16:52:03:609 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/2d8be881-e43e-4835-ab59-91ad9dde2076/click
-2020-04-30 16:52:03:609 [HTTP] {"id":"2d8be881-e43e-4835-ab59-91ad9dde2076"}
-2020-04-30 16:52:03:610 [W3C (fc9dfbdf)] Calling AppiumDriver.click() with args: ["2d8be881-e43e-4835-ab59-91ad9dde2076","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:03:611 [WD Proxy] Matched '/element/2d8be881-e43e-4835-ab59-91ad9dde2076/click' to command name 'click'
-2020-04-30 16:52:03:612 [WD Proxy] Proxying [POST /element/2d8be881-e43e-4835-ab59-91ad9dde2076/click] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/2d8be881-e43e-4835-ab59-91ad9dde2076/click] with body: {"element":"2d8be881-e43e-4835-ab59-91ad9dde2076"}
-2020-04-30 16:52:03:695 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":null}
-2020-04-30 16:52:03:695 [W3C (fc9dfbdf)] Responding to client with driver.click() result: null
-2020-04-30 16:52:03:698 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/2d8be881-e43e-4835-ab59-91ad9dde2076/click 200 87 ms - 14
-2020-04-30 16:52:03:699 [HTTP] 
-2020-04-30 16:52:06:700 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:06:701 [HTTP] {}
-2020-04-30 16:52:06:701 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:06:701 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:06:702 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:06:702 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:06:733 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:06:733 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:06:734 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 33 ms - 1056
-2020-04-30 16:52:06:734 [HTTP] 
-2020-04-30 16:52:06:738 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:06:738 [HTTP] {"using":"accessibility id","value":"Navigation panel, button, double tap to open side panel"}
-2020-04-30 16:52:06:739 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["accessibility id","Navigation panel, button, double tap to open side panel","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:06:739 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:06:739 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:06:740 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:06:741 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"accessibility id","selector":"Navigation panel, button, double tap to open side panel","context":"","multiple":false}
-2020-04-30 16:52:07:291 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"e6962bf3-1e3e-49c3-ab10-c6806bc4932c","element-6066-11e4-a52e-4f735466cecf":"e6962bf3-1e3e-49c3-ab10-c6806bc4932c"}}
-2020-04-30 16:52:07:291 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"e6962bf3-1e3e-49c3-ab10-c6806bc4932c","ELEMENT":"e6962bf3-1e3e-49c3-ab10-c6806bc4932c"}
-2020-04-30 16:52:07:292 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 554 ms - 137
-2020-04-30 16:52:07:293 [HTTP] 
-2020-04-30 16:52:07:297 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/e6962bf3-1e3e-49c3-ab10-c6806bc4932c/click
-2020-04-30 16:52:07:297 [HTTP] {"id":"e6962bf3-1e3e-49c3-ab10-c6806bc4932c"}
-2020-04-30 16:52:07:298 [W3C (fc9dfbdf)] Calling AppiumDriver.click() with args: ["e6962bf3-1e3e-49c3-ab10-c6806bc4932c","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:07:299 [WD Proxy] Matched '/element/e6962bf3-1e3e-49c3-ab10-c6806bc4932c/click' to command name 'click'
-2020-04-30 16:52:07:299 [WD Proxy] Proxying [POST /element/e6962bf3-1e3e-49c3-ab10-c6806bc4932c/click] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/e6962bf3-1e3e-49c3-ab10-c6806bc4932c/click] with body: {"element":"e6962bf3-1e3e-49c3-ab10-c6806bc4932c"}
-2020-04-30 16:52:07:410 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":null}
-2020-04-30 16:52:07:411 [W3C (fc9dfbdf)] Responding to client with driver.click() result: null
-2020-04-30 16:52:07:412 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/e6962bf3-1e3e-49c3-ab10-c6806bc4932c/click 200 115 ms - 14
-2020-04-30 16:52:07:412 [HTTP] 
-2020-04-30 16:52:11:416 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:11:417 [HTTP] {}
-2020-04-30 16:52:11:417 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:11:417 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:11:418 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:11:418 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:11:434 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:11:435 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:11:436 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 19 ms - 1056
-2020-04-30 16:52:11:436 [HTTP] 
-2020-04-30 16:52:11:440 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:11:440 [HTTP] {"using":"xpath","value":"//*[@text ='Settings']"}
-2020-04-30 16:52:11:441 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Settings']","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:11:441 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:11:442 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:11:443 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:11:443 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"xpath","selector":"//*[@text ='Settings']","context":"","multiple":false}
-2020-04-30 16:52:13:811 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"94fb7216-61bd-45ee-adcd-18c211be9984","element-6066-11e4-a52e-4f735466cecf":"94fb7216-61bd-45ee-adcd-18c211be9984"}}
-2020-04-30 16:52:13:811 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"94fb7216-61bd-45ee-adcd-18c211be9984","ELEMENT":"94fb7216-61bd-45ee-adcd-18c211be9984"}
-2020-04-30 16:52:13:812 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 2372 ms - 137
-2020-04-30 16:52:13:813 [HTTP] 
-2020-04-30 16:52:13:816 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/94fb7216-61bd-45ee-adcd-18c211be9984/click
-2020-04-30 16:52:13:816 [HTTP] {"id":"94fb7216-61bd-45ee-adcd-18c211be9984"}
-2020-04-30 16:52:13:817 [W3C (fc9dfbdf)] Calling AppiumDriver.click() with args: ["94fb7216-61bd-45ee-adcd-18c211be9984","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:13:817 [WD Proxy] Matched '/element/94fb7216-61bd-45ee-adcd-18c211be9984/click' to command name 'click'
-2020-04-30 16:52:13:817 [WD Proxy] Proxying [POST /element/94fb7216-61bd-45ee-adcd-18c211be9984/click] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/94fb7216-61bd-45ee-adcd-18c211be9984/click] with body: {"element":"94fb7216-61bd-45ee-adcd-18c211be9984"}
-2020-04-30 16:52:15:207 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":null}
-2020-04-30 16:52:15:208 [W3C (fc9dfbdf)] Responding to client with driver.click() result: null
-2020-04-30 16:52:15:210 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/94fb7216-61bd-45ee-adcd-18c211be9984/click 200 1393 ms - 14
-2020-04-30 16:52:15:210 [HTTP] 
-2020-04-30 16:52:19:216 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:19:216 [HTTP] {}
-2020-04-30 16:52:19:217 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:19:218 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:19:219 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:19:220 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:19:254 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:19:255 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:19:257 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 40 ms - 1056
-2020-04-30 16:52:19:257 [HTTP] 
-2020-04-30 16:52:19:263 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:19:263 [HTTP] {"using":"xpath","value":"//*[@text ='Country & Language']"}
-2020-04-30 16:52:19:264 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Country & Language']","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:19:265 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:19:265 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:19:266 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:19:266 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"xpath","selector":"//*[@text ='Country & Language']","context":"","multiple":false}
-2020-04-30 16:52:20:965 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"8b7f7c2b-8e78-420d-abcc-e55cd68f997b","element-6066-11e4-a52e-4f735466cecf":"8b7f7c2b-8e78-420d-abcc-e55cd68f997b"}}
-2020-04-30 16:52:20:966 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"8b7f7c2b-8e78-420d-abcc-e55cd68f997b","ELEMENT":"8b7f7c2b-8e78-420d-abcc-e55cd68f997b"}
-2020-04-30 16:52:20:966 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 1703 ms - 137
-2020-04-30 16:52:20:967 [HTTP] 
-2020-04-30 16:52:20:970 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/8b7f7c2b-8e78-420d-abcc-e55cd68f997b/click
-2020-04-30 16:52:20:970 [HTTP] {"id":"8b7f7c2b-8e78-420d-abcc-e55cd68f997b"}
-2020-04-30 16:52:20:971 [W3C (fc9dfbdf)] Calling AppiumDriver.click() with args: ["8b7f7c2b-8e78-420d-abcc-e55cd68f997b","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:20:971 [WD Proxy] Matched '/element/8b7f7c2b-8e78-420d-abcc-e55cd68f997b/click' to command name 'click'
-2020-04-30 16:52:20:972 [WD Proxy] Proxying [POST /element/8b7f7c2b-8e78-420d-abcc-e55cd68f997b/click] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/8b7f7c2b-8e78-420d-abcc-e55cd68f997b/click] with body: {"element":"8b7f7c2b-8e78-420d-abcc-e55cd68f997b"}
-2020-04-30 16:52:24:195 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":null}
-2020-04-30 16:52:24:195 [W3C (fc9dfbdf)] Responding to client with driver.click() result: null
-2020-04-30 16:52:24:197 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/8b7f7c2b-8e78-420d-abcc-e55cd68f997b/click 200 3226 ms - 14
-2020-04-30 16:52:24:197 [HTTP] 
-2020-04-30 16:52:28:199 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:28:199 [HTTP] {}
-2020-04-30 16:52:28:200 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:28:200 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:28:200 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:28:201 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:28:233 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:28:233 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:28:234 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 35 ms - 1056
-2020-04-30 16:52:28:235 [HTTP] 
-2020-04-30 16:52:28:239 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:28:239 [HTTP] {"using":"xpath","value":"//android.widget.Button[contains(@text, 'Country/Region:')]"}
-2020-04-30 16:52:28:240 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.Button[contains(@text, 'Country/Region:')]","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:28:240 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:28:240 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:28:241 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:28:241 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"xpath","selector":"//android.widget.Button[contains(@text, 'Country/Region:')]","context":"","multiple":false}
-2020-04-30 16:52:29:074 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"f5a4f411-02da-4e91-8e55-aa9f90064b92","element-6066-11e4-a52e-4f735466cecf":"f5a4f411-02da-4e91-8e55-aa9f90064b92"}}
-2020-04-30 16:52:29:075 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"f5a4f411-02da-4e91-8e55-aa9f90064b92","ELEMENT":"f5a4f411-02da-4e91-8e55-aa9f90064b92"}
-2020-04-30 16:52:29:076 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 837 ms - 137
-2020-04-30 16:52:29:076 [HTTP] 
-2020-04-30 16:52:29:083 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/f5a4f411-02da-4e91-8e55-aa9f90064b92/click
-2020-04-30 16:52:29:083 [HTTP] {"id":"f5a4f411-02da-4e91-8e55-aa9f90064b92"}
-2020-04-30 16:52:29:084 [W3C (fc9dfbdf)] Calling AppiumDriver.click() with args: ["f5a4f411-02da-4e91-8e55-aa9f90064b92","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:29:085 [WD Proxy] Matched '/element/f5a4f411-02da-4e91-8e55-aa9f90064b92/click' to command name 'click'
-2020-04-30 16:52:29:085 [WD Proxy] Proxying [POST /element/f5a4f411-02da-4e91-8e55-aa9f90064b92/click] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/f5a4f411-02da-4e91-8e55-aa9f90064b92/click] with body: {"element":"f5a4f411-02da-4e91-8e55-aa9f90064b92"}
-2020-04-30 16:52:29:623 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":null}
-2020-04-30 16:52:29:624 [W3C (fc9dfbdf)] Responding to client with driver.click() result: null
-2020-04-30 16:52:29:625 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/f5a4f411-02da-4e91-8e55-aa9f90064b92/click 200 541 ms - 14
-2020-04-30 16:52:29:625 [HTTP] 
-2020-04-30 16:52:33:627 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:33:628 [HTTP] {}
-2020-04-30 16:52:33:628 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:33:629 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:33:629 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:33:629 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:33:664 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:33:665 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:33:666 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 38 ms - 1056
-2020-04-30 16:52:33:666 [HTTP] 
-2020-04-30 16:52:33:670 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:33:670 [HTTP] {"using":"xpath","value":"//*[@text ='Australia Amazon.com.au']"}
-2020-04-30 16:52:33:671 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Australia Amazon.com.au']","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:33:671 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:33:671 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:33:672 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:33:674 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"xpath","selector":"//*[@text ='Australia Amazon.com.au']","context":"","multiple":false}
-2020-04-30 16:52:34:216 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"cc28369e-9489-4e0d-84cc-9bfbebfeb3ee","element-6066-11e4-a52e-4f735466cecf":"cc28369e-9489-4e0d-84cc-9bfbebfeb3ee"}}
-2020-04-30 16:52:34:218 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"cc28369e-9489-4e0d-84cc-9bfbebfeb3ee","ELEMENT":"cc28369e-9489-4e0d-84cc-9bfbebfeb3ee"}
-2020-04-30 16:52:34:222 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 550 ms - 137
-2020-04-30 16:52:34:224 [HTTP] 
-2020-04-30 16:52:34:231 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/cc28369e-9489-4e0d-84cc-9bfbebfeb3ee/selected
-2020-04-30 16:52:34:232 [HTTP] {}
-2020-04-30 16:52:34:234 [W3C (fc9dfbdf)] Calling AppiumDriver.elementSelected() with args: ["cc28369e-9489-4e0d-84cc-9bfbebfeb3ee","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:34:235 [WD Proxy] Matched '/element/cc28369e-9489-4e0d-84cc-9bfbebfeb3ee/attribute/selected' to command name 'getAttribute'
-2020-04-30 16:52:34:236 [WD Proxy] Proxying [GET /element/cc28369e-9489-4e0d-84cc-9bfbebfeb3ee/attribute/selected] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/cc28369e-9489-4e0d-84cc-9bfbebfeb3ee/attribute/selected] with body: {}
-2020-04-30 16:52:34:553 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":"false"}
-2020-04-30 16:52:34:553 [W3C (fc9dfbdf)] Responding to client with driver.elementSelected() result: false
-2020-04-30 16:52:34:554 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/cc28369e-9489-4e0d-84cc-9bfbebfeb3ee/selected 200 323 ms - 15
-2020-04-30 16:52:34:554 [HTTP] 
-2020-04-30 16:52:34:556 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:34:557 [HTTP] {}
-2020-04-30 16:52:34:557 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:34:558 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:34:558 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:34:558 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:34:591 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:34:591 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:34:592 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 35 ms - 1056
-2020-04-30 16:52:34:592 [HTTP] 
-2020-04-30 16:52:34:596 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:34:596 [HTTP] {"using":"xpath","value":"//*[@text ='Australia Amazon.com.au']"}
-2020-04-30 16:52:34:596 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Australia Amazon.com.au']","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:34:597 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:34:597 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:34:597 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:34:597 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"xpath","selector":"//*[@text ='Australia Amazon.com.au']","context":"","multiple":false}
-2020-04-30 16:52:35:111 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"8f8100e8-1820-4f1d-a014-47925acf6c13","element-6066-11e4-a52e-4f735466cecf":"8f8100e8-1820-4f1d-a014-47925acf6c13"}}
-2020-04-30 16:52:35:112 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"8f8100e8-1820-4f1d-a014-47925acf6c13","ELEMENT":"8f8100e8-1820-4f1d-a014-47925acf6c13"}
-2020-04-30 16:52:35:114 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 518 ms - 137
-2020-04-30 16:52:35:115 [HTTP] 
-2020-04-30 16:52:35:122 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/8f8100e8-1820-4f1d-a014-47925acf6c13/click
-2020-04-30 16:52:35:123 [HTTP] {"id":"8f8100e8-1820-4f1d-a014-47925acf6c13"}
-2020-04-30 16:52:35:124 [W3C (fc9dfbdf)] Calling AppiumDriver.click() with args: ["8f8100e8-1820-4f1d-a014-47925acf6c13","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:35:125 [WD Proxy] Matched '/element/8f8100e8-1820-4f1d-a014-47925acf6c13/click' to command name 'click'
-2020-04-30 16:52:35:126 [WD Proxy] Proxying [POST /element/8f8100e8-1820-4f1d-a014-47925acf6c13/click] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/8f8100e8-1820-4f1d-a014-47925acf6c13/click] with body: {"element":"8f8100e8-1820-4f1d-a014-47925acf6c13"}
-2020-04-30 16:52:35:615 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":null}
-2020-04-30 16:52:35:615 [W3C (fc9dfbdf)] Responding to client with driver.click() result: null
-2020-04-30 16:52:35:616 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/8f8100e8-1820-4f1d-a014-47925acf6c13/click 200 494 ms - 14
-2020-04-30 16:52:35:616 [HTTP] 
-2020-04-30 16:52:38:619 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:38:619 [HTTP] {}
-2020-04-30 16:52:38:619 [W3C (fc9dfbdf)] Calling AppiumDriver.getSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:38:619 [UiAutomator2] Getting session details from server to mix in
-2020-04-30 16:52:38:620 [WD Proxy] Matched '/' to command name 'getSession'
-2020-04-30 16:52:38:620 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with body: {}
-2020-04-30 16:52:38:657 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{}}
-2020-04-30 16:52:38:658 [W3C (fc9dfbdf)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
-2020-04-30 16:52:38:660 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c 200 40 ms - 1056
-2020-04-30 16:52:38:660 [HTTP] 
-2020-04-30 16:52:38:664 [HTTP] --> POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element
-2020-04-30 16:52:38:665 [HTTP] {"using":"xpath","value":"//android.widget.Button[contains(@text, 'Country/Region:')]"}
-2020-04-30 16:52:38:666 [W3C (fc9dfbdf)] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.Button[contains(@text, 'Country/Region:')]","fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:38:666 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2020-04-30 16:52:38:667 [BaseDriver] Waiting up to 10000 ms for condition
-2020-04-30 16:52:38:667 [WD Proxy] Matched '/element' to command name 'findElement'
-2020-04-30 16:52:38:668 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element] with body: {"strategy":"xpath","selector":"//android.widget.Button[contains(@text, 'Country/Region:')]","context":"","multiple":false}
-2020-04-30 16:52:39:181 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":{"ELEMENT":"0f7fdb48-8fc1-4e05-88f4-91020baed755","element-6066-11e4-a52e-4f735466cecf":"0f7fdb48-8fc1-4e05-88f4-91020baed755"}}
-2020-04-30 16:52:39:181 [W3C (fc9dfbdf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"0f7fdb48-8fc1-4e05-88f4-91020baed755","ELEMENT":"0f7fdb48-8fc1-4e05-88f4-91020baed755"}
-2020-04-30 16:52:39:182 [HTTP] <-- POST /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element 200 517 ms - 137
-2020-04-30 16:52:39:182 [HTTP] 
-2020-04-30 16:52:39:185 [HTTP] --> GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/0f7fdb48-8fc1-4e05-88f4-91020baed755/text
-2020-04-30 16:52:39:185 [HTTP] {}
-2020-04-30 16:52:39:187 [W3C (fc9dfbdf)] Driver proxy active, passing request on via HTTP proxy
-2020-04-30 16:52:39:187 [WD Proxy] Matched '/wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/0f7fdb48-8fc1-4e05-88f4-91020baed755/text' to command name 'getText'
-2020-04-30 16:52:39:188 [WD Proxy] Proxying [GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/0f7fdb48-8fc1-4e05-88f4-91020baed755/text] to [GET http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c/element/0f7fdb48-8fc1-4e05-88f4-91020baed755/text] with body: {}
-2020-04-30 16:52:39:553 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":"Country\/Region: Australia"}
-2020-04-30 16:52:39:554 [WD Proxy] Replacing sessionId 46d1cded-b40a-40cf-bcb6-54477a17fd7c with fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:39:556 [HTTP] <-- GET /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c/element/0f7fdb48-8fc1-4e05-88f4-91020baed755/text 200 370 ms - 88
-2020-04-30 16:52:39:556 [HTTP] 
-2020-04-30 16:52:39:569 [HTTP] --> DELETE /wd/hub/session/fc9dfbdf-1276-43fd-8f4c-7919d21b471c
-2020-04-30 16:52:39:569 [HTTP] {}
-2020-04-30 16:52:39:569 [W3C (fc9dfbdf)] Calling AppiumDriver.deleteSession() with args: ["fc9dfbdf-1276-43fd-8f4c-7919d21b471c"]
-2020-04-30 16:52:39:569 [BaseDriver] Event 'quitSessionRequested' logged at 1588245759569 (16:52:39 GMT+0530 (India Standard Time))
-2020-04-30 16:52:39:570 [Appium] Removing session fc9dfbdf-1276-43fd-8f4c-7919d21b471c from our master session list
-2020-04-30 16:52:39:571 [UiAutomator2] Deleting UiAutomator2 session
-2020-04-30 16:52:39:571 [UiAutomator2] Deleting UiAutomator2 server session
-2020-04-30 16:52:39:571 [WD Proxy] Matched '/' to command name 'deleteSession'
-2020-04-30 16:52:39:572 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/wd/hub/session/46d1cded-b40a-40cf-bcb6-54477a17fd7c] with no body
-2020-04-30 16:52:39:592 [WD Proxy] Got response with status 200: {"sessionId":"46d1cded-b40a-40cf-bcb6-54477a17fd7c","value":null}
-2020-04-30 16:52:39:593 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am force-stop com.amazon.mShop.android.shopping'
-2020-04-30 16:52:40:058 [Instrumentation] .
-2020-04-30 16:52:40:628 [Logcat] Stopping logcat capture
-2020-04-30 16:52:40:644 [ADB] Removing forwarded port socket connection: 8200 
-2020-04-30 16:52:40:645 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF forward --remove tcp\:8200'
-2020-04-30 16:52:40:908 [Instrumentation] Time: 47.103
-2020-04-30 16:52:40:909 [Instrumentation] 
-2020-04-30 16:52:40:909 [Instrumentation] OK (1 test)
-2020-04-30 16:52:41:090 [Instrumentation] The process has exited with code 0
-2020-04-30 16:52:41:305 [UiAutomator2] Restoring hidden api policy to the device default configuration
-2020-04-30 16:52:41:307 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings delete global hidden_api_policy_pre_p_apps'
-2020-04-30 16:52:42:096 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings delete global hidden_api_policy_p_apps'
-2020-04-30 16:52:42:955 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings delete global hidden_api_policy'
-2020-04-30 16:52:43:782 [BaseDriver] Event 'quitSessionFinished' logged at 1588245763781 (16:52:43 GMT+0530 (India Standard Time))
-2020-04-30 16:52:43:782 [W3C (fc9dfbdf)] Received response: null
+2020-05-06 23:18:56:504 [Appium] Welcome to Appium v1.17.0
+2020-05-06 23:18:56:505 [Appium] Non-default server args:
+2020-05-06 23:18:56:506 [Appium]   logFile: C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\test\resources\logs\logResult.txt
+2020-05-06 23:18:56:506 [Appium]   localTimezone: true
+2020-05-06 23:18:56:704 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2020-05-06 23:18:57:376 [HTTP] --> GET /wd/hub/status
+2020-05-06 23:18:57:377 [HTTP] {}
+2020-05-06 23:18:57:381 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2020-05-06 23:18:57:383 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.17.0"}}
+2020-05-06 23:18:57:390 [HTTP] <-- GET /wd/hub/status 200 11 ms - 68
+2020-05-06 23:18:57:391 [HTTP] 
+2020-05-06 23:18:58:385 [HTTP] --> POST /wd/hub/session
+2020-05-06 23:18:58:385 [HTTP] {"desiredCapabilities":{"app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","platformName":"Android","deviceName":"Android"},"capabilities":{"firstMatch":[{"appium:app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appium:appActivity":"com.amazon.mShop.home.HomeActivity","appium:appPackage":"com.amazon.mShop.android.shopping","appium:automationName":"UiAutomator2","appium:deviceName":"Android","platformName":"android"}]}}
+2020-05-06 23:18:58:386 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","platformName":"Android","deviceName":"Android"},null,{"firstMatch":[{"appium:app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appium:appActivity":"com.amazon.mShop.home.HomeActivity","appium:appPackage":"com.amazon.mShop.android.shopping","appium:automationName":"UiAutomator2","appium:deviceName":"Android","platformName":"android"}]}]
+2020-05-06 23:18:58:387 [BaseDriver] Event 'newSessionRequested' logged at 1588787338387 (23:18:58 GMT+0530 (India Standard Time))
+2020-05-06 23:19:04:399 [Appium] Appium v1.17.0 creating new AndroidUiautomator2Driver (v1.44.2) session
+2020-05-06 23:19:04:401 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2020-05-06 23:19:04:401 [BaseDriver] Creating session with W3C capabilities: {
+2020-05-06 23:19:04:402 [BaseDriver]   "alwaysMatch": {
+2020-05-06 23:19:04:402 [BaseDriver]     "platformName": "android",
+2020-05-06 23:19:04:402 [BaseDriver]     "appium:app": "C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk",
+2020-05-06 23:19:04:403 [BaseDriver]     "appium:appActivity": "com.amazon.mShop.home.HomeActivity",
+2020-05-06 23:19:04:403 [BaseDriver]     "appium:appPackage": "com.amazon.mShop.android.shopping",
+2020-05-06 23:19:04:403 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2020-05-06 23:19:04:403 [BaseDriver]     "appium:deviceName": "Android"
+2020-05-06 23:19:04:404 [BaseDriver]   },
+2020-05-06 23:19:04:404 [BaseDriver]   "firstMatch": [
+2020-05-06 23:19:04:404 [BaseDriver]     {}
+2020-05-06 23:19:04:404 [BaseDriver]   ]
+2020-05-06 23:19:04:405 [BaseDriver] }
+2020-05-06 23:19:04:417 [BaseDriver] Session created with session id: 9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:04:422 [BaseDriver] Using local app 'C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk'
+2020-05-06 23:19:04:422 [UiAutomator2] Checking whether app is actually present
+2020-05-06 23:19:04:443 [ADB] Found 1 'build-tools' folders under 'C:\Users\AA20005985\AppData\Local\Android\Sdk' (newest first):
+2020-05-06 23:19:04:444 [ADB]     C:/Users/AA20005985/AppData/Local/Android/Sdk/build-tools/29.0.3
+2020-05-06 23:19:04:454 [ADB] Using 'adb.exe' from 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2020-05-06 23:19:04:456 [AndroidDriver] Retrieving device list
+2020-05-06 23:19:04:456 [ADB] Trying to find a connected android device
+2020-05-06 23:19:04:457 [ADB] Getting connected devices...
+2020-05-06 23:19:05:198 [ADB] Connected devices: [{"udid":"JBAAGF07P816YZF","state":"device"}]
+2020-05-06 23:19:05:199 [AndroidDriver] Using device: JBAAGF07P816YZF
+2020-05-06 23:19:05:200 [ADB] Using 'adb.exe' from 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2020-05-06 23:19:05:201 [ADB] Setting device id to JBAAGF07P816YZF
+2020-05-06 23:19:05:202 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell getprop ro.build.version.sdk'
+2020-05-06 23:19:06:032 [ADB] Current device property 'ro.build.version.sdk': 28
+2020-05-06 23:19:06:032 [ADB] Getting device platform version
+2020-05-06 23:19:06:033 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell getprop ro.build.version.release'
+2020-05-06 23:19:06:736 [ADB] Current device property 'ro.build.version.release': 9
+2020-05-06 23:19:06:736 [ADB] Device API level: 28
+2020-05-06 23:19:06:737 [UiAutomator2] Relaxing hidden api policy
+2020-05-06 23:19:06:737 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings put global hidden_api_policy_pre_p_apps 1'
+2020-05-06 23:19:07:487 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings put global hidden_api_policy_p_apps 1'
+2020-05-06 23:19:08:301 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings put global hidden_api_policy 1'
+2020-05-06 23:19:09:075 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF wait-for-device'
+2020-05-06 23:19:09:763 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell echo ping'
+2020-05-06 23:19:10:568 [AndroidDriver] Pushing settings apk to device...
+2020-05-06 23:19:10:570 [ADB] Getting install status for io.appium.settings
+2020-05-06 23:19:10:570 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.settings'
+2020-05-06 23:19:11:428 [ADB] 'io.appium.settings' is installed
+2020-05-06 23:19:11:428 [ADB] Getting package info for 'io.appium.settings'
+2020-05-06 23:19:11:429 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.settings'
+2020-05-06 23:19:12:214 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('3.1.0' >= '3.1.0')
+2020-05-06 23:19:12:215 [ADB] There is no need to install/upgrade 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2020-05-06 23:19:12:216 [ADB] Getting IDs of all 'io.appium.settings' processes
+2020-05-06 23:19:12:216 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell 'pgrep --help; echo $?''
+2020-05-06 23:19:12:978 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell pgrep -f io\\.appium\\.settings'
+2020-05-06 23:19:13:880 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2020-05-06 23:19:13:880 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell appops set io.appium.settings android\:mock_location allow'
+2020-05-06 23:19:14:643 [Logcat] Starting logcat capture
+2020-05-06 23:19:15:798 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8200
+2020-05-06 23:19:15:798 [ADB] Forwarding system: 8200 to device: 6790
+2020-05-06 23:19:15:799 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF forward tcp\:8200 tcp\:6790'
+2020-05-06 23:19:16:511 [ADB] Getting install status for io.appium.uiautomator2.server
+2020-05-06 23:19:16:512 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.uiautomator2.server'
+2020-05-06 23:19:17:244 [ADB] 'io.appium.uiautomator2.server' is installed
+2020-05-06 23:19:17:245 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2020-05-06 23:19:17:245 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.uiautomator2.server'
+2020-05-06 23:19:18:044 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('4.5.5' >= '4.5.5')
+2020-05-06 23:19:18:045 [UiAutomator2] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2020-05-06 23:19:18:045 [ADB] Checking app cert for C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.5.5.apk
+2020-05-06 23:19:18:048 [ADB] Using 'apksigner.jar' from 'C:\Users\AA20005985\AppData\Local\Android\Sdk\build-tools\29.0.3\lib\apksigner.jar'
+2020-05-06 23:19:18:049 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-11.0.7\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\AA20005985\\AppData\\Local\\Android\\Sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\AA20005985\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.5.5.apk
+2020-05-06 23:19:19:392 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2020-05-06 23:19:19:392 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2020-05-06 23:19:19:392 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2020-05-06 23:19:19:392 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2020-05-06 23:19:19:393 [ADB] 
+2020-05-06 23:19:19:393 [ADB] 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.5.5.apk' is signed with the default certificate
+2020-05-06 23:19:19:393 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2020-05-06 23:19:19:393 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package io.appium.uiautomator2.server.test'
+2020-05-06 23:19:20:138 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2020-05-06 23:19:20:139 [ADB] Checking app cert for C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2020-05-06 23:19:20:139 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-11.0.7\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\AA20005985\\AppData\\Local\\Android\\Sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\AA20005985\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2020-05-06 23:19:21:344 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2020-05-06 23:19:21:344 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2020-05-06 23:19:21:344 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2020-05-06 23:19:21:344 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2020-05-06 23:19:21:345 [ADB] 
+2020-05-06 23:19:21:345 [ADB] 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2020-05-06 23:19:21:345 [UiAutomator2] Server packages are not going to be (re)installed
+2020-05-06 23:19:21:351 [UiAutomator2] Waiting up to 30000ms for services to be available
+2020-05-06 23:19:21:351 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell pm list instrumentation'
+2020-05-06 23:19:22:108 [UiAutomator2] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2020-05-06 23:19:22:109 [ADB] Checking app cert for C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk
+2020-05-06 23:19:22:110 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-11.0.7\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\AA20005985\\AppData\\Local\\Android\\Sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk
+2020-05-06 23:19:25:476 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2020-05-06 23:19:25:476 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2020-05-06 23:19:25:477 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2020-05-06 23:19:25:477 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2020-05-06 23:19:25:477 [ADB] 
+2020-05-06 23:19:25:477 [ADB] 'C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk' is signed with the default certificate
+2020-05-06 23:19:25:478 [ADB] Getting install status for com.amazon.mShop.android.shopping
+2020-05-06 23:19:25:478 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package com.amazon.mShop.android.shopping'
+2020-05-06 23:19:26:251 [ADB] 'com.amazon.mShop.android.shopping' is installed
+2020-05-06 23:19:26:251 [ADB] Getting package info for 'com.amazon.mShop.android.shopping'
+2020-05-06 23:19:26:252 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package com.amazon.mShop.android.shopping'
+2020-05-06 23:19:27:056 [ADB] The version name of the installed 'com.amazon.mShop.android.shopping' is greater or equal to the application version name ('18.14.0' >= '18.14.0')
+2020-05-06 23:19:27:057 [ADB] There is no need to install/upgrade 'C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\app\Amazon_shopping.apk'
+2020-05-06 23:19:27:057 [AndroidDriver] Performing fast reset on 'com.amazon.mShop.android.shopping'
+2020-05-06 23:19:27:058 [ADB] Getting install status for com.amazon.mShop.android.shopping
+2020-05-06 23:19:27:058 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys package com.amazon.mShop.android.shopping'
+2020-05-06 23:19:27:901 [ADB] 'com.amazon.mShop.android.shopping' is installed
+2020-05-06 23:19:27:902 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am force-stop com.amazon.mShop.android.shopping'
+2020-05-06 23:19:28:711 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell pm clear com.amazon.mShop.android.shopping'
+2020-05-06 23:19:30:317 [AndroidDriver] Performed fast reset on the installed 'com.amazon.mShop.android.shopping' application (stop and clear)
+2020-05-06 23:19:30:318 [UiAutomator2] Performing shallow cleanup of automation leftovers
+2020-05-06 23:19:30:420 [UiAutomator2] No obsolete sessions have been detected (Error: socket hang up)
+2020-05-06 23:19:30:421 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am force-stop io.appium.uiautomator2.server.test'
+2020-05-06 23:19:31:131 [UiAutomator2] Starting UIAutomator2 server 4.5.5
+2020-05-06 23:19:31:131 [UiAutomator2] Using UIAutomator2 server from 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.5.5.apk' and test from 'C:\Users\AA20005985\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+2020-05-06 23:19:31:132 [UiAutomator2] Waiting up to 30000ms for UiAutomator2 to be online...
+2020-05-06 23:19:31:132 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","JBAAGF07P816YZF","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2020-05-06 23:19:32:378 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-05-06 23:19:32:384 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-05-06 23:19:32:402 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-06 23:19:33:405 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-05-06 23:19:33:406 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-05-06 23:19:33:413 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-06 23:19:34:028 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2020-05-06 23:19:34:414 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-05-06 23:19:34:416 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-05-06 23:19:34:431 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-06 23:19:35:434 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-05-06 23:19:35:436 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-05-06 23:19:35:451 [WD Proxy] Got response with unknown status: {"code":"ECONNRESET"}
+2020-05-06 23:19:36:454 [WD Proxy] Matched '/status' to command name 'getStatus'
+2020-05-06 23:19:36:456 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8200/wd/hub/status] with no body
+2020-05-06 23:19:36:599 [WD Proxy] Got response with status 200: {"sessionId":"None","value":{"ready":true,"message":"UiAutomator2 Server is ready to accept commands"}}
+2020-05-06 23:19:36:599 [UiAutomator2] The initialization of the instrumentation process took 5468ms
+2020-05-06 23:19:36:600 [WD Proxy] Matched '/session' to command name 'createSession'
+2020-05-06 23:19:36:600 [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8200/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF"}],"alwaysMatch":{}}}
+2020-05-06 23:19:36:666 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF"}],"alwaysMatch":{}}}}
+2020-05-06 23:19:36:667 [WD Proxy] Determined the downstream protocol as 'W3C'
+2020-05-06 23:19:36:681 [WD Proxy] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/appium/device/info] with no body
+2020-05-06 23:19:36:804 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"androidId":"14ff8c1ab084e929","manufacturer":"asus","model":"ASUS_X01BDA","brand":"asus","apiVersion":"28","platformVersion":"9","carrierName":"Jio 4G","realDisplaySize":"1080x2280","displayDensity":408,"networks":[{"type":0,"typeName":"MOBILE","subtype":13,"subtypeName":"LTE","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":"ims","isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"TRANSPORT_CELLULAR","networkCapabilities":"NET_CAPABILITY_IMS,NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","linkUpstreamBandwidthKbps":51200,"linkDownBandwidthKbps":102400,"signalStrength":-2147483648,"networkSpecifier":"2","SSID":null}},{"type":1,"typeName":"WIFI","subtype":0,"subtypeName":"","isConnected":true,"detailedState":"CONNECTED"...
+2020-05-06 23:19:36:805 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell dumpsys window'
+2020-05-06 23:19:37:870 [AndroidDriver] Screen already unlocked, doing nothing
+2020-05-06 23:19:37:871 [UiAutomator2] Starting 'com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity and waiting for 'com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity'
+2020-05-06 23:19:37:872 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am start -W -n com.amazon.mShop.android.shopping/com.amazon.mShop.home.HomeActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2020-05-06 23:19:40:651 [WD Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/appium/device/pixel_ratio] with body: {}
+2020-05-06 23:19:40:672 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":2.55}
+2020-05-06 23:19:40:674 [WD Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2020-05-06 23:19:40:674 [WD Proxy] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/appium/device/system_bars] with body: {}
+2020-05-06 23:19:40:691 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"statusBar":74}}
+2020-05-06 23:19:40:692 [WD Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2020-05-06 23:19:40:692 [WD Proxy] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/window/current/size] with body: {}
+2020-05-06 23:19:40:709 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"height":2086,"width":1080}}
+2020-05-06 23:19:40:710 [Appium] New AndroidUiautomator2Driver session created successfully, session 9fcc6002-635f-4f3e-b676-3e86022febd2 added to master session list
+2020-05-06 23:19:40:711 [BaseDriver] Event 'newSessionStarted' logged at 1588787380710 (23:19:40 GMT+0530 (India Standard Time))
+2020-05-06 23:19:40:711 [W3C (9fcc6002)] Cached the protocol value 'W3C' for the new session 9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:40:712 [W3C (9fcc6002)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left...
+2020-05-06 23:19:40:715 [HTTP] <-- POST /wd/hub/session 200 42328 ms - 1124
+2020-05-06 23:19:40:715 [HTTP] 
+2020-05-06 23:19:40:798 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:40:799 [HTTP] {}
+2020-05-06 23:19:40:800 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:40:801 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:40:801 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:40:802 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:40:812 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:40:813 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:40:815 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 16 ms - 1056
+2020-05-06 23:19:40:815 [HTTP] 
+2020-05-06 23:19:40:824 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:40:824 [HTTP] {}
+2020-05-06 23:19:40:824 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:40:825 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:40:825 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:40:826 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:40:840 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:40:841 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:40:842 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 19 ms - 1056
+2020-05-06 23:19:40:843 [HTTP] 
+2020-05-06 23:19:40:900 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:40:901 [HTTP] {}
+2020-05-06 23:19:40:901 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:40:902 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:40:902 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:40:902 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:40:936 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:40:937 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:40:938 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 37 ms - 1056
+2020-05-06 23:19:40:938 [HTTP] 
+2020-05-06 23:19:40:943 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:40:943 [HTTP] {}
+2020-05-06 23:19:40:944 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:40:945 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:40:945 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:40:946 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:40:971 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:40:972 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:40:973 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 30 ms - 1056
+2020-05-06 23:19:40:973 [HTTP] 
+2020-05-06 23:19:41:255 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:41:256 [HTTP] {}
+2020-05-06 23:19:41:256 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:41:257 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:41:257 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:41:257 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:41:290 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:41:290 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:41:292 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 37 ms - 1056
+2020-05-06 23:19:41:293 [HTTP] 
+2020-05-06 23:19:41:297 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:41:298 [HTTP] {}
+2020-05-06 23:19:41:298 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:41:299 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:41:299 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:41:299 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:41:313 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:41:313 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:41:314 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 17 ms - 1056
+2020-05-06 23:19:41:314 [HTTP] 
+2020-05-06 23:19:41:327 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:41:328 [HTTP] {}
+2020-05-06 23:19:41:328 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:41:329 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:41:330 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:41:330 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:41:344 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:41:345 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:41:346 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 18 ms - 1056
+2020-05-06 23:19:41:347 [HTTP] 
+2020-05-06 23:19:41:351 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:41:351 [HTTP] {}
+2020-05-06 23:19:41:352 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:41:352 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:41:353 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:41:353 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:41:365 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:41:366 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:41:367 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 16 ms - 1056
+2020-05-06 23:19:41:367 [HTTP] 
+2020-05-06 23:19:41:382 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/timeouts
+2020-05-06 23:19:41:382 [HTTP] {"implicit":10000}
+2020-05-06 23:19:41:386 [W3C (9fcc6002)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,10000,"9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:41:387 [BaseDriver] W3C timeout argument: {"implicit":10000}}
+2020-05-06 23:19:41:387 [BaseDriver] Set implicit wait to 10000ms
+2020-05-06 23:19:41:388 [W3C (9fcc6002)] Responding to client with driver.timeouts() result: null
+2020-05-06 23:19:41:392 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/timeouts 200 7 ms - 14
+2020-05-06 23:19:41:392 [HTTP] 
+2020-05-06 23:19:41:394 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:41:394 [HTTP] {}
+2020-05-06 23:19:41:395 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:41:395 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:41:396 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:41:396 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:41:408 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:41:409 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:41:410 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 15 ms - 1056
+2020-05-06 23:19:41:410 [HTTP] 
+2020-05-06 23:19:41:420 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:19:41:421 [HTTP] {"using":"id","value":"com.amazon.mShop.android.shopping:id/skip_sign_in_button"}
+2020-05-06 23:19:41:426 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["id","com.amazon.mShop.android.shopping:id/skip_sign_in_button","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:41:427 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:19:41:427 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:19:41:429 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:19:41:429 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}
+2020-05-06 23:19:41:910 [WD Proxy] Got response with status 404: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2020-05-06 23:19:41:911 [W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2020-05-06 23:19:41:911 [BaseDriver] Waited for 484 ms so far
+2020-05-06 23:19:42:413 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:19:42:414 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}
+2020-05-06 23:19:43:371 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"5ae5c4d6-0210-4978-8abf-3386927c39f2","element-6066-11e4-a52e-4f735466cecf":"5ae5c4d6-0210-4978-8abf-3386927c39f2"}}
+2020-05-06 23:19:43:372 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5ae5c4d6-0210-4978-8abf-3386927c39f2","ELEMENT":"5ae5c4d6-0210-4978-8abf-3386927c39f2"}
+2020-05-06 23:19:43:374 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 1953 ms - 137
+2020-05-06 23:19:43:375 [HTTP] 
+2020-05-06 23:19:43:382 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/5ae5c4d6-0210-4978-8abf-3386927c39f2/displayed
+2020-05-06 23:19:43:382 [HTTP] {}
+2020-05-06 23:19:43:387 [W3C (9fcc6002)] Calling AppiumDriver.elementDisplayed() with args: ["5ae5c4d6-0210-4978-8abf-3386927c39f2","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:43:388 [WD Proxy] Matched '/element/5ae5c4d6-0210-4978-8abf-3386927c39f2/attribute/displayed' to command name 'getAttribute'
+2020-05-06 23:19:43:388 [WD Proxy] Proxying [GET /element/5ae5c4d6-0210-4978-8abf-3386927c39f2/attribute/displayed] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/5ae5c4d6-0210-4978-8abf-3386927c39f2/attribute/displayed] with body: {}
+2020-05-06 23:19:43:446 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":"true"}
+2020-05-06 23:19:43:446 [W3C (9fcc6002)] Responding to client with driver.elementDisplayed() result: true
+2020-05-06 23:19:43:447 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/5ae5c4d6-0210-4978-8abf-3386927c39f2/displayed 200 65 ms - 14
+2020-05-06 23:19:43:447 [HTTP] 
+2020-05-06 23:19:43:450 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:43:450 [HTTP] {}
+2020-05-06 23:19:43:450 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:43:450 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:43:451 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:43:451 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:43:483 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:43:483 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:43:484 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 34 ms - 1056
+2020-05-06 23:19:43:485 [HTTP] 
+2020-05-06 23:19:43:492 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:19:43:492 [HTTP] {"using":"id","value":"com.amazon.mShop.android.shopping:id/skip_sign_in_button"}
+2020-05-06 23:19:43:493 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["id","com.amazon.mShop.android.shopping:id/skip_sign_in_button","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:43:493 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:19:43:493 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:19:43:494 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:19:43:494 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"id","selector":"com.amazon.mShop.android.shopping:id/skip_sign_in_button","context":"","multiple":false}
+2020-05-06 23:19:44:344 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"28d80fd7-730c-4f66-8920-5e7bb1eccc1b","element-6066-11e4-a52e-4f735466cecf":"28d80fd7-730c-4f66-8920-5e7bb1eccc1b"}}
+2020-05-06 23:19:44:346 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"28d80fd7-730c-4f66-8920-5e7bb1eccc1b","ELEMENT":"28d80fd7-730c-4f66-8920-5e7bb1eccc1b"}
+2020-05-06 23:19:44:349 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 856 ms - 137
+2020-05-06 23:19:44:351 [HTTP] 
+2020-05-06 23:19:44:359 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/28d80fd7-730c-4f66-8920-5e7bb1eccc1b/click
+2020-05-06 23:19:44:359 [HTTP] {"id":"28d80fd7-730c-4f66-8920-5e7bb1eccc1b"}
+2020-05-06 23:19:44:361 [W3C (9fcc6002)] Calling AppiumDriver.click() with args: ["28d80fd7-730c-4f66-8920-5e7bb1eccc1b","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:44:362 [WD Proxy] Matched '/element/28d80fd7-730c-4f66-8920-5e7bb1eccc1b/click' to command name 'click'
+2020-05-06 23:19:44:363 [WD Proxy] Proxying [POST /element/28d80fd7-730c-4f66-8920-5e7bb1eccc1b/click] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/28d80fd7-730c-4f66-8920-5e7bb1eccc1b/click] with body: {"element":"28d80fd7-730c-4f66-8920-5e7bb1eccc1b"}
+2020-05-06 23:19:44:422 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":null}
+2020-05-06 23:19:44:423 [W3C (9fcc6002)] Responding to client with driver.click() result: null
+2020-05-06 23:19:44:424 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/28d80fd7-730c-4f66-8920-5e7bb1eccc1b/click 200 65 ms - 14
+2020-05-06 23:19:44:424 [HTTP] 
+2020-05-06 23:19:47:431 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:47:432 [HTTP] {}
+2020-05-06 23:19:47:433 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:47:434 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:47:435 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:47:436 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:47:472 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:47:473 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:47:474 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 43 ms - 1056
+2020-05-06 23:19:47:475 [HTTP] 
+2020-05-06 23:19:47:480 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:19:47:480 [HTTP] {"using":"accessibility id","value":"Navigation panel, button, double tap to open side panel"}
+2020-05-06 23:19:47:481 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["accessibility id","Navigation panel, button, double tap to open side panel","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:47:482 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:19:47:482 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:19:47:483 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:19:47:483 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"accessibility id","selector":"Navigation panel, button, double tap to open side panel","context":"","multiple":false}
+2020-05-06 23:19:47:975 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"b1b07362-15a1-4436-b054-65b4da0517df","element-6066-11e4-a52e-4f735466cecf":"b1b07362-15a1-4436-b054-65b4da0517df"}}
+2020-05-06 23:19:47:976 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"b1b07362-15a1-4436-b054-65b4da0517df","ELEMENT":"b1b07362-15a1-4436-b054-65b4da0517df"}
+2020-05-06 23:19:47:977 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 497 ms - 137
+2020-05-06 23:19:47:978 [HTTP] 
+2020-05-06 23:19:47:984 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/b1b07362-15a1-4436-b054-65b4da0517df/click
+2020-05-06 23:19:47:984 [HTTP] {"id":"b1b07362-15a1-4436-b054-65b4da0517df"}
+2020-05-06 23:19:47:985 [W3C (9fcc6002)] Calling AppiumDriver.click() with args: ["b1b07362-15a1-4436-b054-65b4da0517df","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:47:986 [WD Proxy] Matched '/element/b1b07362-15a1-4436-b054-65b4da0517df/click' to command name 'click'
+2020-05-06 23:19:47:987 [WD Proxy] Proxying [POST /element/b1b07362-15a1-4436-b054-65b4da0517df/click] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/b1b07362-15a1-4436-b054-65b4da0517df/click] with body: {"element":"b1b07362-15a1-4436-b054-65b4da0517df"}
+2020-05-06 23:19:48:054 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":null}
+2020-05-06 23:19:48:054 [W3C (9fcc6002)] Responding to client with driver.click() result: null
+2020-05-06 23:19:48:055 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/b1b07362-15a1-4436-b054-65b4da0517df/click 200 71 ms - 14
+2020-05-06 23:19:48:056 [HTTP] 
+2020-05-06 23:19:52:058 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:52:058 [HTTP] {}
+2020-05-06 23:19:52:059 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:52:059 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:52:060 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:52:060 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:52:091 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:52:092 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:52:093 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 35 ms - 1056
+2020-05-06 23:19:52:093 [HTTP] 
+2020-05-06 23:19:52:098 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:19:52:098 [HTTP] {"using":"xpath","value":"//*[@text ='Settings']"}
+2020-05-06 23:19:52:099 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Settings']","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:52:100 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:19:52:100 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:19:52:101 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:19:52:101 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"xpath","selector":"//*[@text ='Settings']","context":"","multiple":false}
+2020-05-06 23:19:54:232 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"b79b78d3-b1b5-4401-9ec5-fa7684f4506f","element-6066-11e4-a52e-4f735466cecf":"b79b78d3-b1b5-4401-9ec5-fa7684f4506f"}}
+2020-05-06 23:19:54:235 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"b79b78d3-b1b5-4401-9ec5-fa7684f4506f","ELEMENT":"b79b78d3-b1b5-4401-9ec5-fa7684f4506f"}
+2020-05-06 23:19:54:238 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 2139 ms - 137
+2020-05-06 23:19:54:240 [HTTP] 
+2020-05-06 23:19:54:250 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/b79b78d3-b1b5-4401-9ec5-fa7684f4506f/click
+2020-05-06 23:19:54:251 [HTTP] {"id":"b79b78d3-b1b5-4401-9ec5-fa7684f4506f"}
+2020-05-06 23:19:54:251 [W3C (9fcc6002)] Calling AppiumDriver.click() with args: ["b79b78d3-b1b5-4401-9ec5-fa7684f4506f","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:54:253 [WD Proxy] Matched '/element/b79b78d3-b1b5-4401-9ec5-fa7684f4506f/click' to command name 'click'
+2020-05-06 23:19:54:253 [WD Proxy] Proxying [POST /element/b79b78d3-b1b5-4401-9ec5-fa7684f4506f/click] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/b79b78d3-b1b5-4401-9ec5-fa7684f4506f/click] with body: {"element":"b79b78d3-b1b5-4401-9ec5-fa7684f4506f"}
+2020-05-06 23:19:55:438 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":null}
+2020-05-06 23:19:55:440 [W3C (9fcc6002)] Responding to client with driver.click() result: null
+2020-05-06 23:19:55:443 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/b79b78d3-b1b5-4401-9ec5-fa7684f4506f/click 200 1191 ms - 14
+2020-05-06 23:19:55:444 [HTTP] 
+2020-05-06 23:19:59:452 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:19:59:453 [HTTP] {}
+2020-05-06 23:19:59:455 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:59:456 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:19:59:457 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:19:59:458 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:19:59:493 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:19:59:494 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:19:59:494 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 43 ms - 1056
+2020-05-06 23:19:59:495 [HTTP] 
+2020-05-06 23:19:59:499 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:19:59:499 [HTTP] {"using":"xpath","value":"//*[@text ='Country & Language']"}
+2020-05-06 23:19:59:499 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Country & Language']","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:19:59:500 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:19:59:500 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:19:59:500 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:19:59:501 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"xpath","selector":"//*[@text ='Country & Language']","context":"","multiple":false}
+2020-05-06 23:20:01:017 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"e7dcd355-299b-46bd-ac7f-80926e91d6a5","element-6066-11e4-a52e-4f735466cecf":"e7dcd355-299b-46bd-ac7f-80926e91d6a5"}}
+2020-05-06 23:20:01:019 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"e7dcd355-299b-46bd-ac7f-80926e91d6a5","ELEMENT":"e7dcd355-299b-46bd-ac7f-80926e91d6a5"}
+2020-05-06 23:20:01:022 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 1522 ms - 137
+2020-05-06 23:20:01:023 [HTTP] 
+2020-05-06 23:20:01:031 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/e7dcd355-299b-46bd-ac7f-80926e91d6a5/click
+2020-05-06 23:20:01:032 [HTTP] {"id":"e7dcd355-299b-46bd-ac7f-80926e91d6a5"}
+2020-05-06 23:20:01:033 [W3C (9fcc6002)] Calling AppiumDriver.click() with args: ["e7dcd355-299b-46bd-ac7f-80926e91d6a5","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:01:034 [WD Proxy] Matched '/element/e7dcd355-299b-46bd-ac7f-80926e91d6a5/click' to command name 'click'
+2020-05-06 23:20:01:035 [WD Proxy] Proxying [POST /element/e7dcd355-299b-46bd-ac7f-80926e91d6a5/click] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/e7dcd355-299b-46bd-ac7f-80926e91d6a5/click] with body: {"element":"e7dcd355-299b-46bd-ac7f-80926e91d6a5"}
+2020-05-06 23:20:04:943 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":null}
+2020-05-06 23:20:04:944 [W3C (9fcc6002)] Responding to client with driver.click() result: null
+2020-05-06 23:20:04:945 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/e7dcd355-299b-46bd-ac7f-80926e91d6a5/click 200 3914 ms - 14
+2020-05-06 23:20:04:946 [HTTP] 
+2020-05-06 23:20:08:953 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:20:08:955 [HTTP] {}
+2020-05-06 23:20:08:956 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:08:958 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:20:08:960 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:20:08:961 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:20:08:999 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:20:08:999 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:20:09:000 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 47 ms - 1056
+2020-05-06 23:20:09:001 [HTTP] 
+2020-05-06 23:20:09:008 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:20:09:008 [HTTP] {"using":"xpath","value":"//android.widget.Button[contains(@text, 'Country/Region:')]"}
+2020-05-06 23:20:09:010 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.Button[contains(@text, 'Country/Region:')]","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:09:010 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:20:09:011 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:20:09:012 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:20:09:012 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"xpath","selector":"//android.widget.Button[contains(@text, 'Country/Region:')]","context":"","multiple":false}
+2020-05-06 23:20:09:566 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"7db0990d-88d3-4fea-9834-770514477940","element-6066-11e4-a52e-4f735466cecf":"7db0990d-88d3-4fea-9834-770514477940"}}
+2020-05-06 23:20:09:566 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"7db0990d-88d3-4fea-9834-770514477940","ELEMENT":"7db0990d-88d3-4fea-9834-770514477940"}
+2020-05-06 23:20:09:567 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 559 ms - 137
+2020-05-06 23:20:09:568 [HTTP] 
+2020-05-06 23:20:09:571 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/7db0990d-88d3-4fea-9834-770514477940/click
+2020-05-06 23:20:09:572 [HTTP] {"id":"7db0990d-88d3-4fea-9834-770514477940"}
+2020-05-06 23:20:09:572 [W3C (9fcc6002)] Calling AppiumDriver.click() with args: ["7db0990d-88d3-4fea-9834-770514477940","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:09:573 [WD Proxy] Matched '/element/7db0990d-88d3-4fea-9834-770514477940/click' to command name 'click'
+2020-05-06 23:20:09:574 [WD Proxy] Proxying [POST /element/7db0990d-88d3-4fea-9834-770514477940/click] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/7db0990d-88d3-4fea-9834-770514477940/click] with body: {"element":"7db0990d-88d3-4fea-9834-770514477940"}
+2020-05-06 23:20:09:718 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":null}
+2020-05-06 23:20:09:719 [W3C (9fcc6002)] Responding to client with driver.click() result: null
+2020-05-06 23:20:09:720 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/7db0990d-88d3-4fea-9834-770514477940/click 200 148 ms - 14
+2020-05-06 23:20:09:720 [HTTP] 
+2020-05-06 23:20:13:723 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:20:13:723 [HTTP] {}
+2020-05-06 23:20:13:723 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:13:724 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:20:13:724 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:20:13:724 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:20:13:763 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:20:13:764 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:20:13:765 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 42 ms - 1056
+2020-05-06 23:20:13:765 [HTTP] 
+2020-05-06 23:20:13:769 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:20:13:770 [HTTP] {"using":"xpath","value":"//*[@text ='Australia Amazon.com.au']"}
+2020-05-06 23:20:13:771 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Australia Amazon.com.au']","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:13:771 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:20:13:771 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:20:13:772 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:20:13:773 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"xpath","selector":"//*[@text ='Australia Amazon.com.au']","context":"","multiple":false}
+2020-05-06 23:20:14:315 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"95eefe6f-0d93-49d3-907d-2fa160ccd53d","element-6066-11e4-a52e-4f735466cecf":"95eefe6f-0d93-49d3-907d-2fa160ccd53d"}}
+2020-05-06 23:20:14:317 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"95eefe6f-0d93-49d3-907d-2fa160ccd53d","ELEMENT":"95eefe6f-0d93-49d3-907d-2fa160ccd53d"}
+2020-05-06 23:20:14:320 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 549 ms - 137
+2020-05-06 23:20:14:320 [HTTP] 
+2020-05-06 23:20:14:325 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/95eefe6f-0d93-49d3-907d-2fa160ccd53d/selected
+2020-05-06 23:20:14:326 [HTTP] {}
+2020-05-06 23:20:14:327 [W3C (9fcc6002)] Calling AppiumDriver.elementSelected() with args: ["95eefe6f-0d93-49d3-907d-2fa160ccd53d","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:14:329 [WD Proxy] Matched '/element/95eefe6f-0d93-49d3-907d-2fa160ccd53d/attribute/selected' to command name 'getAttribute'
+2020-05-06 23:20:14:329 [WD Proxy] Proxying [GET /element/95eefe6f-0d93-49d3-907d-2fa160ccd53d/attribute/selected] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/95eefe6f-0d93-49d3-907d-2fa160ccd53d/attribute/selected] with body: {}
+2020-05-06 23:20:14:366 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":"false"}
+2020-05-06 23:20:14:366 [W3C (9fcc6002)] Responding to client with driver.elementSelected() result: false
+2020-05-06 23:20:14:367 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/95eefe6f-0d93-49d3-907d-2fa160ccd53d/selected 200 42 ms - 15
+2020-05-06 23:20:14:367 [HTTP] 
+2020-05-06 23:20:14:369 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:20:14:369 [HTTP] {}
+2020-05-06 23:20:14:371 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:14:371 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:20:14:372 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:20:14:372 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:20:14:398 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:20:14:399 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:20:14:400 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 30 ms - 1056
+2020-05-06 23:20:14:400 [HTTP] 
+2020-05-06 23:20:14:403 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:20:14:404 [HTTP] {"using":"xpath","value":"//*[@text ='Australia Amazon.com.au']"}
+2020-05-06 23:20:14:404 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text ='Australia Amazon.com.au']","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:14:405 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:20:14:405 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:20:14:405 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:20:14:405 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"xpath","selector":"//*[@text ='Australia Amazon.com.au']","context":"","multiple":false}
+2020-05-06 23:20:14:954 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"ea9b2c77-fa27-419d-8492-33d8bd0605c6","element-6066-11e4-a52e-4f735466cecf":"ea9b2c77-fa27-419d-8492-33d8bd0605c6"}}
+2020-05-06 23:20:14:956 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"ea9b2c77-fa27-419d-8492-33d8bd0605c6","ELEMENT":"ea9b2c77-fa27-419d-8492-33d8bd0605c6"}
+2020-05-06 23:20:14:958 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 554 ms - 137
+2020-05-06 23:20:14:960 [HTTP] 
+2020-05-06 23:20:14:966 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/ea9b2c77-fa27-419d-8492-33d8bd0605c6/click
+2020-05-06 23:20:14:967 [HTTP] {"id":"ea9b2c77-fa27-419d-8492-33d8bd0605c6"}
+2020-05-06 23:20:14:968 [W3C (9fcc6002)] Calling AppiumDriver.click() with args: ["ea9b2c77-fa27-419d-8492-33d8bd0605c6","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:14:969 [WD Proxy] Matched '/element/ea9b2c77-fa27-419d-8492-33d8bd0605c6/click' to command name 'click'
+2020-05-06 23:20:14:970 [WD Proxy] Proxying [POST /element/ea9b2c77-fa27-419d-8492-33d8bd0605c6/click] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/ea9b2c77-fa27-419d-8492-33d8bd0605c6/click] with body: {"element":"ea9b2c77-fa27-419d-8492-33d8bd0605c6"}
+2020-05-06 23:20:15:032 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":null}
+2020-05-06 23:20:15:033 [W3C (9fcc6002)] Responding to client with driver.click() result: null
+2020-05-06 23:20:15:033 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/ea9b2c77-fa27-419d-8492-33d8bd0605c6/click 200 67 ms - 14
+2020-05-06 23:20:15:034 [HTTP] 
+2020-05-06 23:20:18:036 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:20:18:037 [HTTP] {}
+2020-05-06 23:20:18:037 [W3C (9fcc6002)] Calling AppiumDriver.getSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:18:038 [UiAutomator2] Getting session details from server to mix in
+2020-05-06 23:20:18:038 [WD Proxy] Matched '/' to command name 'getSession'
+2020-05-06 23:20:18:039 [WD Proxy] Proxying [GET /] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with body: {}
+2020-05-06 23:20:18:079 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{}}
+2020-05-06 23:20:18:080 [W3C (9fcc6002)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"Android"},"platformName":"android","app":"C:\\Users\\AA20005985\\eclipse-MobileWorkspace\\AmazonDemo\\app\\Amazon_shopping.apk","appActivity":"com.amazon.mShop.home.HomeActivity","appPackage":"com.amazon.mShop.android.shopping","automationName":"UiAutomator2","deviceName":"JBAAGF07P816YZF","deviceUDID":"JBAAGF07P816YZF","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":408,"deviceModel":"ASUS_X01BDA","deviceManufacturer":"asus","pixelRatio":2.55,"statBarHeight":74,"viewportRect":{"left":0,"top":74,"wi...
+2020-05-06 23:20:18:081 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 44 ms - 1056
+2020-05-06 23:20:18:081 [HTTP] 
+2020-05-06 23:20:18:087 [HTTP] --> POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element
+2020-05-06 23:20:18:088 [HTTP] {"using":"xpath","value":"//android.widget.Button[contains(@text, 'Country/Region:')]"}
+2020-05-06 23:20:18:088 [W3C (9fcc6002)] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.Button[contains(@text, 'Country/Region:')]","9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:18:089 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2020-05-06 23:20:18:089 [BaseDriver] Waiting up to 10000 ms for condition
+2020-05-06 23:20:18:090 [WD Proxy] Matched '/element' to command name 'findElement'
+2020-05-06 23:20:18:090 [WD Proxy] Proxying [POST /element] to [POST http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element] with body: {"strategy":"xpath","selector":"//android.widget.Button[contains(@text, 'Country/Region:')]","context":"","multiple":false}
+2020-05-06 23:20:18:615 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":{"ELEMENT":"04ad28d0-8715-4809-b095-06765939a64d","element-6066-11e4-a52e-4f735466cecf":"04ad28d0-8715-4809-b095-06765939a64d"}}
+2020-05-06 23:20:18:617 [W3C (9fcc6002)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"04ad28d0-8715-4809-b095-06765939a64d","ELEMENT":"04ad28d0-8715-4809-b095-06765939a64d"}
+2020-05-06 23:20:18:619 [HTTP] <-- POST /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element 200 531 ms - 137
+2020-05-06 23:20:18:621 [HTTP] 
+2020-05-06 23:20:18:629 [HTTP] --> GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/04ad28d0-8715-4809-b095-06765939a64d/text
+2020-05-06 23:20:18:630 [HTTP] {}
+2020-05-06 23:20:18:635 [W3C (9fcc6002)] Driver proxy active, passing request on via HTTP proxy
+2020-05-06 23:20:18:637 [WD Proxy] Matched '/wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/04ad28d0-8715-4809-b095-06765939a64d/text' to command name 'getText'
+2020-05-06 23:20:18:638 [WD Proxy] Proxying [GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/04ad28d0-8715-4809-b095-06765939a64d/text] to [GET http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d/element/04ad28d0-8715-4809-b095-06765939a64d/text] with body: {}
+2020-05-06 23:20:18:682 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":"Country\/Region: Australia"}
+2020-05-06 23:20:18:683 [WD Proxy] Replacing sessionId f8925cea-53df-40bd-a677-fe07eeb5923d with 9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:20:18:684 [HTTP] <-- GET /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2/element/04ad28d0-8715-4809-b095-06765939a64d/text 200 55 ms - 88
+2020-05-06 23:20:18:684 [HTTP] 
+2020-05-06 23:20:18:696 [HTTP] --> DELETE /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2
+2020-05-06 23:20:18:696 [HTTP] {}
+2020-05-06 23:20:18:697 [W3C (9fcc6002)] Calling AppiumDriver.deleteSession() with args: ["9fcc6002-635f-4f3e-b676-3e86022febd2"]
+2020-05-06 23:20:18:697 [BaseDriver] Event 'quitSessionRequested' logged at 1588787418697 (23:20:18 GMT+0530 (India Standard Time))
+2020-05-06 23:20:18:697 [Appium] Removing session 9fcc6002-635f-4f3e-b676-3e86022febd2 from our master session list
+2020-05-06 23:20:18:700 [UiAutomator2] Deleting UiAutomator2 session
+2020-05-06 23:20:18:701 [UiAutomator2] Deleting UiAutomator2 server session
+2020-05-06 23:20:18:701 [WD Proxy] Matched '/' to command name 'deleteSession'
+2020-05-06 23:20:18:701 [WD Proxy] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/wd/hub/session/f8925cea-53df-40bd-a677-fe07eeb5923d] with no body
+2020-05-06 23:20:18:728 [WD Proxy] Got response with status 200: {"sessionId":"f8925cea-53df-40bd-a677-fe07eeb5923d","value":null}
+2020-05-06 23:20:18:728 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell am force-stop com.amazon.mShop.android.shopping'
+2020-05-06 23:20:19:100 [Instrumentation] .
+2020-05-06 23:20:19:596 [Logcat] Stopping logcat capture
+2020-05-06 23:20:19:616 [ADB] Removing forwarded port socket connection: 8200 
+2020-05-06 23:20:19:617 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF forward --remove tcp\:8200'
+2020-05-06 23:20:19:901 [Instrumentation] Time: 45.083
+2020-05-06 23:20:19:901 [Instrumentation] 
+2020-05-06 23:20:19:902 [Instrumentation] OK (1 test)
+2020-05-06 23:20:19:958 [Instrumentation] The process has exited with code 0
+2020-05-06 23:20:20:290 [UiAutomator2] Restoring hidden api policy to the device default configuration
+2020-05-06 23:20:20:290 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings delete global hidden_api_policy_pre_p_apps'
+2020-05-06 23:20:21:011 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings delete global hidden_api_policy_p_apps'
+2020-05-06 23:20:21:814 [ADB] Running 'C:\Users\AA20005985\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s JBAAGF07P816YZF shell settings delete global hidden_api_policy'
+2020-05-06 23:20:22:583 [BaseDriver] Event 'quitSessionFinished' logged at 1588787422583 (23:20:22 GMT+0530 (India Standard Time))
+2020-05-06 23:20:22:584 [W3C (9fcc6002)] Received response: null
+2020-05-06 23:20:22:584 [W3C (9fcc6002)] But deleting session, so not returning
+2020-05-06 23:20:22:584 [W3C (9fcc6002)] Responding to client with driver.deleteSession() result: null
+2020-05-06 23:20:22:585 [W3C (9fcc6002)] Destroying socket connection
+2020-05-06 23:20:22:586 [HTTP] <-- DELETE /wd/hub/session/9fcc6002-635f-4f3e-b676-3e86022febd2 200 3889 ms - 14
+2020-05-06 23:20:22:586 [HTTP] 

@@ -2,6 +2,8 @@ package testCase;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -13,6 +15,7 @@ import io.appium.java_client.android.AndroidElement;
 import pageObjects.HomePage;
 import pageObjects.SearchPanel;
 import pageObjects.WelcomePage;
+import resources.Log4j;
 import utilities.Utilities;
 
 /**
@@ -20,6 +23,8 @@ import utilities.Utilities;
  *
  */
 public class VerifyCountryRegion extends Base {
+	
+	private static final Logger logger = Logger.getLogger(VerifyCountryRegion.class.getName());
 	
 	public AndroidDriver<AndroidElement> driver;
 	
@@ -29,7 +34,9 @@ public class VerifyCountryRegion extends Base {
 	 */
 	@BeforeTest
 	public void initialization() throws InterruptedException, IOException {
+		logger.info("Starting server");
 		service = StartServer();
+		logger.info("Connecting with device");
 		driver = Capabilities("AmazonApplication");
 	}
 
