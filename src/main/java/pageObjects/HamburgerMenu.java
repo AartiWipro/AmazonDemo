@@ -2,6 +2,8 @@ package pageObjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -33,8 +35,10 @@ public class HamburgerMenu  {
 	/**
 	 * @param driver
 	 * @return
+	 * @throws InterruptedException 
 	 */
-	public String GetCountryNameText(AppiumDriver<AndroidElement> driver ) {
+	public String GetCountryNameText(AppiumDriver<AndroidElement> driver ) throws InterruptedException {
+		Thread.sleep(3000);
 		String conRegValue = countryRegion.getText();
 		return conRegValue;
 	}

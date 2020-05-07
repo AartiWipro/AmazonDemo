@@ -4,10 +4,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
 /**
+ * The Utilities class contains all the common methods related to web pages
  * @author Aarti
  *
  */
@@ -16,14 +20,15 @@ public class Utilities {
 	static AndroidDriver<AndroidElement> driver;
 
 	/**
-	 * @param driver
+	 * @param driver : will define WebElement value
 	 */
 	public Utilities(AndroidDriver<AndroidElement> driver) {
 		Utilities.driver = driver;
 	}
 
 	/**
-	 * @param Country
+	 * The ScrollToText method is use for performing scroll operation if element will be not visible
+	 * @param Country : will define string value
 	 * @return
 	 */
 	public WebElement ScrollToText(String Country) {
@@ -33,16 +38,18 @@ public class Utilities {
 	}
 
 	/**
-	 * @param ele
+	 * The click method is use for performing click operation for web elements
+	 * @param ele : will define WebElement value
 	 * @throws InterruptedException
 	 */
 	public static void Click(WebElement ele) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(ele));
 		ele.click();
-		Thread.sleep(4000);
 	}
 
 	/**
-	 * @param value
+	 * @param value : will define string value
 	 * @throws IOException
 	 */
 	public static void GetPropertiesValue(String value) throws IOException {

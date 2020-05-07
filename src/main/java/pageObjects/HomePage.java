@@ -20,5 +20,5 @@ public class HomePage {
 	}
 
 	@AndroidFindBy(accessibility = "Navigation panel, button, double tap to open side panel")
-	public WebElement searchPlate;
+	public WebElement sidePanel;
 }

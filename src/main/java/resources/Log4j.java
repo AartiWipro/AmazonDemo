@@ -5,7 +5,7 @@ import org.apache.log4j.PropertyConfigurator;
 
 /**
  * The Log4J class implements the information about methods/test cases
- * @author AA20005985
+ * @author Aarti
  *
  */
 public class Log4j {
