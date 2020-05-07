@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-07T16:50:23 IST" name="Default suite" finished-at="2020-05-07T16:52:26 IST" duration-ms="122816">
+  <suite started-at="2020-05-08T03:23:21 IST" name="Default suite" finished-at="2020-05-08T03:25:38 IST" duration-ms="137324">
     <groups>
     </groups>
-    <test started-at="2020-05-07T16:50:23 IST" name="Default test" finished-at="2020-05-07T16:52:26 IST" duration-ms="122816">
+    <test started-at="2020-05-08T03:23:21 IST" name="Default test" finished-at="2020-05-08T03:25:38 IST" duration-ms="137324">
       <class name="testCase.VerifyCountryRegion">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:testCase.VerifyCountryRegion@15043a2f]" started-at="2020-05-07T16:50:23 IST" name="initialization" finished-at="2020-05-07T16:51:53 IST" duration-ms="90406" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:testCase.VerifyCountryRegion@15043a2f]" started-at="2020-05-08T03:23:21 IST" name="initialization" finished-at="2020-05-08T03:24:58 IST" duration-ms="97162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="verifyingCountry()[pri:0, instance:testCase.VerifyCountryRegion@15043a2f]" started-at="2020-05-07T16:51:53 IST" name="verifyingCountry" finished-at="2020-05-07T16:52:21 IST" duration-ms="28131" status="PASS">
+        <test-method signature="verifyingCountry()[pri:0, instance:testCase.VerifyCountryRegion@15043a2f]" started-at="2020-05-08T03:24:58 IST" name="verifyingCountry" finished-at="2020-05-08T03:25:34 IST" duration-ms="35595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyingCountry -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:testCase.VerifyCountryRegion@15043a2f]" started-at="2020-05-07T16:52:21 IST" name="endSession" finished-at="2020-05-07T16:52:26 IST" duration-ms="4242" status="PASS">
+        <test-method is-config="true" signature="endSession()[pri:0, instance:testCase.VerifyCountryRegion@15043a2f]" started-at="2020-05-08T03:25:34 IST" name="endSession" finished-at="2020-05-08T03:25:38 IST" duration-ms="4493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->

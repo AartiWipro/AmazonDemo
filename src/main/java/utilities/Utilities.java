@@ -1,14 +1,16 @@
 package utilities;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.NoSuchElementException;
 
 /**
  * The Utilities class contains all the common methods related to web pages
@@ -47,16 +49,36 @@ public class Utilities {
 		wait.until(ExpectedConditions.visibilityOf(ele));
 		ele.click();
 	}
-
+	
 	/**
-	 * @param value : will define string value
-	 * @throws IOException
+	 * The Method is will scroll the page until element will display
+	 * @param by 
+	 * @param driver : will define WebDriver value
+	 * @return : it will return the webelement value
+	 * @throws InterruptedException 
 	 */
-	public static void GetPropertiesValue(String value) throws IOException {
-		FileInputStream fs = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\java\\globle.properties");
-		Properties prop = new Properties();
-		prop.load(fs);
-		prop.get(value);
-	}
+	public static AndroidElement scrollToElement(By by, AppiumDriver<AndroidElement> driver) throws InterruptedException {
+		Thread.sleep(3000);
+		AndroidElement element = null;
+		int numberOfTimes = 10;
+		Dimension size = driver.manage().window().getSize();
+		int anchor = (int)(size.width / 2);
+		//Swipe up to scroll down
+		int startPoint = (int)(size.height - 10);
+		int endPoint = 10;
+
+		for (int i = 0; i < numberOfTimes; i++) {
+		try {
+		new TouchAction(driver)
+		.longPress(PointOption.point(anchor, startPoint)) //.press(point(anchor, startPoint)) if used press need proper waiting time
+		//.waitAction(waitOptions(ofMillis(miliseconds)))
+		.moveTo(PointOption.point(anchor, endPoint)).release().perform();
+		element = (AndroidElement) driver.findElement(by);
+		i = numberOfTimes;
+		} catch (NoSuchElementException ex) {
+		System.out.println(String.format("Element not available. Scrolling times…", i + 1));
+		}
+		}
+		return element;
+		}
 }

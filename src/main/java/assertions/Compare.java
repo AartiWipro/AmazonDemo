@@ -35,7 +35,7 @@ public class Compare {
 	 * @param ele : will define WebElement value
 	 * @return : will return the result in boolean
 	 */
-	public static boolean validateElement(WebElement ele) {
+	public static boolean isElementDisplay(WebElement ele) {
 		boolean result = false;
 		result = ele.isDisplayed() ? true : false;
 		return result;

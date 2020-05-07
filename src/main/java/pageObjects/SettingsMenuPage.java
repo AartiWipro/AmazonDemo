@@ -8,30 +8,28 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
- * The HomePage class contains all the Xpath and method related to home page.
+ * The Settings Menu class contains all the Xpath and method related to settings menu.
  * @author Aarti
  *
  */
-public class HomePage {
+public class SettingsMenuPage  {
 
 	// Concatenate driver
-	public HomePage(AndroidDriver<AndroidElement> driver) {	
+	public SettingsMenuPage(AndroidDriver<AndroidElement> driver) {		
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
-	@AndroidFindBy(accessibility = "Navigation panel, button, double tap to open side panel")
-	public WebElement sidePanel;	
-	@AndroidFindBy(accessibility = "Home")
-	public WebElement homePage;
-	@AndroidFindBy(xpath = "//android.widget.EditText[@text ='Search']")
-	public WebElement homePageSearch;
+	@AndroidFindBy(xpath = "//*[@text ='Country & Language']")
+	public WebElement countryLanguage;
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text ='Settings']")
+	public WebElement settingsMenu;
 	
 	/**
 	 * @param ele : will define WebElement value
 	 * @param text : will define string value
 	 * @return  : will return the result in boolean.
 	 */
-	public static boolean verifyingHomePage(WebElement ele, String text) {
+	public static boolean verifyingSettingsMenu(WebElement ele, String text) {
 		boolean result = false;		
 		result = ele.getText().equals(text) ? true : false;				
 		return result;

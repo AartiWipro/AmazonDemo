@@ -20,4 +20,17 @@ public class WelcomePage {
 
 	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/skip_sign_in_button")
 	public WebElement signIn;
+	@AndroidFindBy(accessibility = "Welcome")
+	public WebElement welcomePage;
+	
+	/**
+	 * @param ele : will define WebElement value
+	 * @param text : will define string value
+	 * @return  : will return the result in boolean.
+	 */
+	public static boolean verifyingWelcomePage(WebElement ele, String text) {
+		boolean result = false;		
+		result = ele.getText().equals(text) ? true : false;				
+		return result;
+	}
 }
