@@ -19,7 +19,7 @@ import org.openqa.selenium.NoSuchElementException;
  */
 public class Utilities {
 
-	static AndroidDriver<AndroidElement> driver;
+	public static AndroidDriver<AndroidElement> driver;
 
 	/**
 	 * @param driver : will define WebElement value
@@ -58,7 +58,6 @@ public class Utilities {
 	 * @throws InterruptedException 
 	 */
 	public static AndroidElement scrollToElement(By by, AppiumDriver<AndroidElement> driver) throws InterruptedException {
-		Thread.sleep(3000);
 		AndroidElement element = null;
 		int numberOfTimes = 10;
 		Dimension size = driver.manage().window().getSize();

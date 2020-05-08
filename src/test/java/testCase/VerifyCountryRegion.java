@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
@@ -98,31 +100,12 @@ public class VerifyCountryRegion extends Base {
 		logger.info("Country options will display with selected language");
 		boolean ConViewDisplay = CountryRegionLanguagePage.verifyingCountryRegionLang(crl.countryRegionView,
 				global.getString("conRegView"));
-		assertEquals(ConViewDisplay, true);
-
-		try {
-			if (!sp.ausRedioBtn.isSelected()) {
-				wait.until(ExpectedConditions.visibilityOf(sp.ausRedioBtn));
-				sp.ausRedioBtn.click();
-			} else {
-				WebElement ele = ut.ScrollToText(global.getString("country"));
-				System.out.print(ele.getText());
-				if (!sp.ausRedioBtn.isSelected()) {
-					wait.until(ExpectedConditions.visibilityOf(sp.ausRedioBtn));
-					sp.ausRedioBtn.click();
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		// Country Verification
-		String Country = crl.getCountryNameText(driver);
-		boolean flag = Compare.assertEquals(Country, global.getString("country"));
-		if (flag)
-			System.out.println("Verified Country...");
-		else
-			Compare.assertFail();
+		assertEquals(ConViewDisplay, true);		
+		CountryRegionLanguagePage.selectCountry(global.getString("country"), driver);
+		//Country Verification
+		String countryTxt = crl.getCountryNameText(driver);
+		boolean txtDisplay = Compare.isTextDisplay(crl.countryRegion, countryTxt);
+		assertEquals(txtDisplay, true);	
 	}
 
 	/**

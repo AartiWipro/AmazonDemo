@@ -9,6 +9,7 @@ import io.appium.java_client.android.AndroidElement;
  * @author Aarti
  *
  */
+
 public class Compare {
 	static AndroidDriver<AndroidElement> driver;
 
@@ -31,7 +32,7 @@ public class Compare {
 	}
 
 	/**
-	 * The validateElement method is used for validating the WebElement which is displaying on web page 
+	 * The method is used for validating the WebElement which is displaying on web page 
 	 * @param ele : will define WebElement value
 	 * @return : will return the result in boolean
 	 */
@@ -42,14 +43,21 @@ public class Compare {
 	}
 
 	/**
-	 * The validateText method is used for validating the WebElement text which is displaying on web page 
+	 * The method is used for validating the WebElement text which is displaying on web page 
 	 * @param ele : will define WebElement value
 	 * @param text : will define string value
 	 * @return : will return the result in boolean
+	 * @throws InterruptedException 
 	 */
-	public static boolean validateText(WebElement ele, String text) {
+	public static boolean isTextDisplay(WebElement ele, String text) throws InterruptedException {
 		boolean result = false;		
-		result = ele.getText().equals(text) ? true : false;				
+		try {
+			result = ele.getText().contains(text) ? true : false;
+		} catch (Exception e) {
+			Thread.sleep(3000);
+			result = ele.getText().contains(text) ? true : false;
+			e.printStackTrace();
+		}				
 		return result;
 	}
 
