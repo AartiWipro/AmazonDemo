@@ -37,9 +37,15 @@ public class VerifyCountryRegion extends Base {
 	public AndroidDriver<AndroidElement> driver;
 	public WebDriverWait wait;
 	public ResourceBundle global;
+	WelcomePage wp;
+	HomePage hp;
+	HamburgerMainMenu sp;
+	Utilities ut;
+	SettingsMenu sm;
+	CountryRegionLanguagePage crl;
 
 	/**
-	 * The method is use for starting the server and initiating the driver .
+	 * The method is use for starting the server,  driver and initializing the object for all classes
 	 * 
 	 * @throws InterruptedException
 	 * @throws IOException
@@ -52,24 +58,22 @@ public class VerifyCountryRegion extends Base {
 		driver = Capabilities("amazonApplication");
 		wait = new WebDriverWait(driver, 30);
 		global = ResourceBundle.getBundle("global");
+		wp = new WelcomePage(driver);
+		hp = new HomePage(driver);
+		sp = new HamburgerMainMenu(driver);
+		sm = new SettingsMenu(driver);
+		crl = new CountryRegionLanguagePage(driver);
 	}
 
 	/**
-	 * The test case method will verify Country/region as Australia after changing
+	 * The test case  will select Country/region as Australia after changing
 	 * the default Country setting.
 	 * 
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
-	@Test
-	public void verifyingCountry() throws InterruptedException, IOException {
-		WelcomePage wp = new WelcomePage(driver);
-		HomePage hp = new HomePage(driver);
-		HamburgerMainMenu sp = new HamburgerMainMenu(driver);
-		Utilities ut = new Utilities(driver);
-		SettingsMenu sm = new SettingsMenu(driver);
-		CountryRegionLanguagePage crl = new CountryRegionLanguagePage(driver);
-
+	@Test(priority = 0)
+	public void setectCountry() throws InterruptedException, IOException {
 		logger.info("Welcome Page will display");
 		wait.until(ExpectedConditions.visibilityOf(wp.signIn));
 		boolean eleDisplay = Compare.isElementDisplay(wp.signIn);
@@ -95,17 +99,27 @@ public class VerifyCountryRegion extends Base {
 		logger.info("Country/Region & Language page will display");
 		boolean ConLangDisplay = CountryRegionLanguagePage.verifyingCountryRegionLang(crl.countryRegionLang,
 				global.getString("conRegLangTitle"));
-		assertEquals(ConLangDisplay, true);		
-		CountryRegionLanguagePage.selectConLanButton(global.getString("selectedConLanButton"));		
+		assertEquals(ConLangDisplay, true);
+		CountryRegionLanguagePage.selectConLanButton(global.getString("selectedConLanButton"));
 		logger.info("Country options will display with selected language");
 		boolean ConViewDisplay = CountryRegionLanguagePage.verifyingCountryRegionLang(crl.countryRegionView,
 				global.getString("conRegView"));
-		assertEquals(ConViewDisplay, true);		
+		assertEquals(ConViewDisplay, true);
+	}
+
+	/**
+	 * The test case will verify Country/region as Australia
+	 * 
+	 * @throws InterruptedException
+	 * @throws IOException
+	 */
+	@Test(priority = 1)
+	public void verifyingCountry() throws InterruptedException, IOException {
 		CountryRegionLanguagePage.selectCountry(global.getString("country"), driver);
-		//Country Verification
+		// Country Verification
 		String countryTxt = crl.getCountryNameText(driver);
 		boolean txtDisplay = Compare.isTextDisplay(crl.countryRegion, countryTxt);
-		assertEquals(txtDisplay, true);	
+		assertEquals(txtDisplay, true);
 	}
 
 	/**

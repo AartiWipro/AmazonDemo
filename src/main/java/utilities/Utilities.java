@@ -45,8 +45,6 @@ public class Utilities {
 	 * @throws InterruptedException
 	 */
 	public static void Click(WebElement ele) throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.visibilityOf(ele));
 		ele.click();
 	}
 	
