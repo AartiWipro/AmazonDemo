@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.android.AndroidDriver;
@@ -12,10 +14,10 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
  * @author Aarti
  *
  */
-public class SettingsMenuPage  {
+public class SettingsMenu  {
 
 	// Concatenate driver
-	public SettingsMenuPage(AndroidDriver<AndroidElement> driver) {		
+	public SettingsMenu(AndroidDriver<AndroidElement> driver) {		
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
@@ -23,8 +25,11 @@ public class SettingsMenuPage  {
 	public WebElement countryLanguage;
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text ='Settings']")
 	public WebElement settingsMenu;
+	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/drawer_item_title")
+	public static List <WebElement> settingMenuOptions;
 	
 	/**
+	 * The Method will verify the title of the page
 	 * @param ele : will define WebElement value
 	 * @param text : will define string value
 	 * @return  : will return the result in boolean.
@@ -33,5 +38,22 @@ public class SettingsMenuPage  {
 		boolean result = false;		
 		result = ele.getText().equals(text) ? true : false;				
 		return result;
+	}
+	
+	/**
+	 * The method will verify the menu options and will click on the selected option
+	 * @param text : will define string value
+	 */
+	public static void selectSettingMenuOption(String text) {
+		int count = settingMenuOptions.size();
+		for(int i=0; i<= count; i++) {
+			String textVal= settingMenuOptions.get(i).getText();
+			if(textVal.equalsIgnoreCase(text)) {
+				settingMenuOptions.get(i).click();
+				break;
+			}
+			else
+				continue;				
+		}
 	}
 }

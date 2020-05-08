@@ -14,7 +14,7 @@ import base.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import pageObjects.HomePage;
-import pageObjects.SettingsMenuPage;
+import pageObjects.SettingsMenu;
 import pageObjects.CountryRegionLanguagePage;
 import pageObjects.HamburgerMainMenu;
 import pageObjects.WelcomePage;
@@ -28,6 +28,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * @author Aarti
  *
  */
+
 public class VerifyCountryRegion extends Base {
 
 	private static final Logger logger = Logger.getLogger(VerifyCountryRegion.class.getName());
@@ -64,7 +65,7 @@ public class VerifyCountryRegion extends Base {
 		HomePage hp = new HomePage(driver);
 		HamburgerMainMenu sp = new HamburgerMainMenu(driver);
 		Utilities ut = new Utilities(driver);
-		SettingsMenuPage sm = new SettingsMenuPage(driver);
+		SettingsMenu sm = new SettingsMenu(driver);
 		CountryRegionLanguagePage crl = new CountryRegionLanguagePage(driver);
 
 		logger.info("Welcome Page will display");
@@ -76,25 +77,24 @@ public class VerifyCountryRegion extends Base {
 			System.out.print("In Home screen");
 		logger.info("Home Page will display");
 		wait.until(ExpectedConditions.visibilityOf(hp.sidePanel));
-		boolean homePageDisplay = HomePage.verifyingHomePage(hp.homePageSearch,
-				global.getString("homePageTitle"));
+		boolean homePageDisplay = HomePage.verifyingHomePage(hp.homePageSearch, global.getString("homePageTitle"));
 		assertEquals(homePageDisplay, true);
 		Utilities.Click(hp.sidePanel);
 		logger.info("Main menu will display");
 		boolean hamBMDisplay = HamburgerMainMenu.verifyingHamburgerMenu(sp.hamburgerMenu,
 				global.getString("hamburgerMenuTitle"));
 		assertEquals(hamBMDisplay, true);
-		Utilities.Click(sp.setting);
+		HamburgerMainMenu.selectMainMenuOption(global.getString("selectedMainMenuOption"));
 		logger.info("Settings menu page will display");
-		boolean settingDisplay = SettingsMenuPage.verifyingSettingsMenu(sm.settingsMenu,
+		boolean settingDisplay = SettingsMenu.verifyingSettingsMenu(sm.settingsMenu,
 				global.getString("settingsMenuTitle"));
 		assertEquals(settingDisplay, true);
-		Utilities.Click(sm.countryLanguage);
+		SettingsMenu.selectSettingMenuOption(global.getString("selectedSettingsMenuOption"));
 		logger.info("Country/Region & Language page will display");
 		boolean ConLangDisplay = CountryRegionLanguagePage.verifyingCountryRegionLang(crl.countryRegionLang,
 				global.getString("conRegLangTitle"));
-		assertEquals(ConLangDisplay, true);
-		Utilities.Click(crl.countryRegion);
+		assertEquals(ConLangDisplay, true);		
+		CountryRegionLanguagePage.selectConLanButton(global.getString("selectedConLanButton"));		
 		logger.info("Country options will display with selected language");
 		boolean ConViewDisplay = CountryRegionLanguagePage.verifyingCountryRegionLang(crl.countryRegionView,
 				global.getString("conRegView"));
@@ -118,7 +118,7 @@ public class VerifyCountryRegion extends Base {
 
 		// Country Verification
 		String Country = crl.getCountryNameText(driver);
-		boolean flag = Compare.assertEquals(Country, "Australia");
+		boolean flag = Compare.assertEquals(Country, global.getString("country"));
 		if (flag)
 			System.out.println("Verified Country...");
 		else

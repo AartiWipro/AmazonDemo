@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.AppiumDriver;
@@ -26,8 +28,11 @@ public class CountryRegionLanguagePage  {
 	public WebElement countryRegionLang;
 	@AndroidFindBy(xpath = "//android.view.View[@text ='Country/Region']")
 	public WebElement countryRegionView;
+	@AndroidFindBy(className = "android.widget.Button")
+	public static List <WebElement> countryRegionBtn;
 	
 	/**
+	 * The Method will verify the title of the page
 	 * @param ele : will define WebElement value
 	 * @param text : will define string value
 	 * @return  : will return the result in boolean.
@@ -47,6 +52,24 @@ public class CountryRegionLanguagePage  {
 		Thread.sleep(3000);
 		String conRegValue = countryRegion.getText();
 		return conRegValue;
+	}
+	
+	/**
+	 * The method will verify the menu options and will click on the selected option
+	 * @param text : will define string value
+	 */
+	public static void selectConLanButton(String text) {
+		int count = countryRegionBtn.size();
+		for(int i=0; i<= count; i++) {
+			String textVal= countryRegionBtn.get(i).getText();
+			if(textVal.contains(text)) {
+				System.out.println("text********"+text);
+				countryRegionBtn.get(i).click();
+				break;
+			}
+			else
+				continue;				
+		}
 	}
 
 }

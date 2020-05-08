@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.android.AndroidDriver;
@@ -25,8 +27,11 @@ public class HamburgerMainMenu  {
 	public WebElement ausRedioBtn;
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text ='Hello. Sign In']")
 	public WebElement hamburgerMenu;
+	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/drawer_item_title")
+	public static List <WebElement> mainMenuOptions;
 	
 	/**
+	 * The Method will verify the title of the page
 	 * @param ele : will define WebElement value
 	 * @param text : will define string value
 	 * @return  : will return the result in boolean.
@@ -35,5 +40,22 @@ public class HamburgerMainMenu  {
 		boolean result = false;		
 		result = ele.getText().equals(text) ? true : false;				
 		return result;
+	}
+	
+	/**
+	 * The method will verify the menu options and will click on the selected option
+	 * @param text : will define string value
+	 */
+	public static void selectMainMenuOption(String text) {
+		int count = mainMenuOptions.size();
+		for(int i=0; i<= count; i++) {
+			String textVal= mainMenuOptions.get(i).getText();
+			if(textVal.equalsIgnoreCase(text)) {
+				mainMenuOptions.get(i).click();
+				break;
+			}
+			else
+				continue;				
+		}
 	}
 }
