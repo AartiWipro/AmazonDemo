@@ -78,4 +78,15 @@ public class Utilities {
 		}
 		return element;
 		}
+	
+	/**
+	 * @param ele : will define WebElement value
+	 * @param text : will define string value
+	 * @return  : will return the result in boolean.
+	 */
+	public static boolean verifyingPage(WebElement ele, String text) {
+		boolean result = false;		
+		result = ele.getText().equals(text) ? true : false;				
+		return result;
+	}
 }

@@ -51,9 +51,7 @@ public class SettingsMenu  {
 			if(textVal.equalsIgnoreCase(text)) {
 				settingMenuOptions.get(i).click();
 				break;
-			}
-			else
-				continue;				
+			}			
 		}
 	}
 }

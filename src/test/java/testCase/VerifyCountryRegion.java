@@ -37,12 +37,12 @@ public class VerifyCountryRegion extends Base {
 	public AndroidDriver<AndroidElement> driver;
 	public WebDriverWait wait;
 	public ResourceBundle global;
-	WelcomePage wp;
-	HomePage hp;
-	HamburgerMainMenu sp;
-	Utilities ut;
-	SettingsMenu sm;
-	CountryRegionLanguagePage crl;
+	WelcomePage web;
+	HomePage home;
+	HamburgerMainMenu mainMenu;
+	Utilities util;
+	SettingsMenu setMenu;
+	CountryRegionLanguagePage countryLang;
 
 	/**
 	 * The method is use for starting the server,  driver and initializing the object for all classes
@@ -58,11 +58,11 @@ public class VerifyCountryRegion extends Base {
 		driver = Capabilities("amazonApplication");
 		wait = new WebDriverWait(driver, 30);
 		global = ResourceBundle.getBundle("global");
-		wp = new WelcomePage(driver);
-		hp = new HomePage(driver);
-		sp = new HamburgerMainMenu(driver);
-		sm = new SettingsMenu(driver);
-		crl = new CountryRegionLanguagePage(driver);
+		web = new WelcomePage(driver);
+		home = new HomePage(driver);
+		mainMenu = new HamburgerMainMenu(driver);
+		setMenu = new SettingsMenu(driver);
+		countryLang = new CountryRegionLanguagePage(driver);
 	}
 
 	/**
@@ -75,36 +75,36 @@ public class VerifyCountryRegion extends Base {
 	@Test(priority = 0)
 	public void setectCountry() throws InterruptedException, IOException {
 		logger.info("Welcome Page will display");
-		wait.until(ExpectedConditions.visibilityOf(wp.signIn));
-		boolean eleDisplay = Compare.isElementDisplay(wp.signIn);
+		wait.until(ExpectedConditions.visibilityOf(web.signIn));
+		boolean eleDisplay = Compare.isElementDisplay(web.signIn);
 		if (eleDisplay) {
-			wp.signIn.click();
+			web.signIn.click();
 		} else
 			System.out.print("In Home screen");
 		logger.info("Home Page will display");
-		wait.until(ExpectedConditions.visibilityOf(hp.sidePanel));
-		boolean homePageDisplay = HomePage.verifyingHomePage(hp.homePageSearch, global.getString("homePageTitle"));
+		wait.until(ExpectedConditions.visibilityOf(home.sidePanel));
+		boolean homePageDisplay = Utilities.verifyingPage(home.homePageSearch, global.getString("homePageTitle"));
 		assertEquals(homePageDisplay, true);
-		Utilities.Click(hp.sidePanel);
+		Utilities.Click(home.sidePanel);
 		logger.info("Main menu will display");
-		boolean hamBMDisplay = HamburgerMainMenu.verifyingHamburgerMenu(sp.hamburgerMenu,
+		boolean mainMenuDisplay = Utilities.verifyingPage(mainMenu.hamburgerMenu,
 				global.getString("hamburgerMenuTitle"));
-		assertEquals(hamBMDisplay, true);
+		assertEquals(mainMenuDisplay, true);
 		HamburgerMainMenu.selectMainMenuOption(global.getString("selectedMainMenuOption"));
 		logger.info("Settings menu page will display");
-		boolean settingDisplay = SettingsMenu.verifyingSettingsMenu(sm.settingsMenu,
+		boolean settingDisplay = Utilities.verifyingPage(setMenu.settingsMenu,
 				global.getString("settingsMenuTitle"));
 		assertEquals(settingDisplay, true);
 		SettingsMenu.selectSettingMenuOption(global.getString("selectedSettingsMenuOption"));
 		logger.info("Country/Region & Language page will display");
-		boolean ConLangDisplay = CountryRegionLanguagePage.verifyingCountryRegionLang(crl.countryRegionLang,
+		boolean ConLangDisplay = Utilities.verifyingPage(countryLang.countryRegionLang,
 				global.getString("conRegLangTitle"));
 		assertEquals(ConLangDisplay, true);
 		CountryRegionLanguagePage.selectConLanButton(global.getString("selectedConLanButton"));
 		logger.info("Country options will display with selected language");
-		boolean ConViewDisplay = CountryRegionLanguagePage.verifyingCountryRegionLang(crl.countryRegionView,
+		boolean conViewDisplay = Utilities.verifyingPage(countryLang.countryRegionView,
 				global.getString("conRegView"));
-		assertEquals(ConViewDisplay, true);
+		assertEquals(conViewDisplay, true);
 	}
 
 	/**
@@ -117,8 +117,8 @@ public class VerifyCountryRegion extends Base {
 	public void verifyingCountry() throws InterruptedException, IOException {
 		CountryRegionLanguagePage.selectCountry(global.getString("country"), driver);
 		// Country Verification
-		String countryTxt = crl.getCountryNameText(driver);
-		boolean txtDisplay = Compare.isTextDisplay(crl.countryRegion, countryTxt);
+		String countryTxt = countryLang.getCountryNameText(driver);
+		boolean txtDisplay = Compare.isTextDisplay(countryLang.countryRegion, countryTxt);
 		assertEquals(txtDisplay, true);
 	}
 

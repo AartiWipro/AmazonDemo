@@ -75,8 +75,7 @@ public class CountryRegionLanguagePage {
 			if (textVal.contains(text)) {
 				countryRegionBtn.get(i).click();
 				break;
-			} else
-				continue;
+			} 
 		}
 	}
 

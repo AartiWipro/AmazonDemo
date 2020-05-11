@@ -53,9 +53,7 @@ public class HamburgerMainMenu  {
 			if(textVal.equalsIgnoreCase(text)) {
 				mainMenuOptions.get(i).click();
 				break;
-			}
-			else
-				continue;				
+			}				
 		}
 	}
 }
