@@ -4,10 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
