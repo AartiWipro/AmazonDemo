@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-11T12:29:59 IST" name="Default suite" finished-at="2020-05-11T12:33:06 IST" duration-ms="187346">
+  <suite started-at="2020-05-13T12:43:17 IST" name="Default suite" finished-at="2020-05-13T12:44:57 IST" duration-ms="99956">
     <groups>
     </groups>
-    <test started-at="2020-05-11T12:29:59 IST" name="Default test" finished-at="2020-05-11T12:33:06 IST" duration-ms="187346">
+    <test started-at="2020-05-13T12:43:17 IST" name="Default test" finished-at="2020-05-13T12:44:57 IST" duration-ms="99956">
       <class name="testCase.VerifyCountryRegion">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-11T12:29:59 IST" name="initialization" finished-at="2020-05-11T12:32:31 IST" duration-ms="151771" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-13T12:43:17 IST" name="initialization" finished-at="2020-05-13T12:44:17 IST" duration-ms="60044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="setectCountry()[pri:0, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-11T12:32:31 IST" name="setectCountry" finished-at="2020-05-11T12:32:58 IST" duration-ms="26795" status="PASS">
+        <test-method signature="setectCountry()[pri:0, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-13T12:44:17 IST" name="setectCountry" finished-at="2020-05-13T12:44:48 IST" duration-ms="31653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setectCountry -->
-        <test-method signature="verifyingCountry()[pri:1, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-11T12:32:58 IST" name="verifyingCountry" finished-at="2020-05-11T12:33:03 IST" duration-ms="5096" status="PASS">
+        <test-method signature="verifyingCountry()[pri:1, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-13T12:44:48 IST" name="verifyingCountry" finished-at="2020-05-13T12:44:53 IST" duration-ms="4944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyingCountry -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-11T12:33:03 IST" name="endSession" finished-at="2020-05-11T12:33:06 IST" duration-ms="3625" status="PASS">
+        <test-method is-config="true" signature="endSession()[pri:0, instance:testCase.VerifyCountryRegion@4a83a74a]" started-at="2020-05-13T12:44:53 IST" name="endSession" finished-at="2020-05-13T12:44:57 IST" duration-ms="3262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->

@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import assertions.Compare;
+import assertions.Validation;
 import base.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -73,7 +73,7 @@ public class VerifyCountryRegion extends Base {
 	public void setectCountry() throws InterruptedException, IOException {
 		logger.info("Welcome Page will display");
 		wait.until(ExpectedConditions.visibilityOf(web.signIn));
-		boolean eleDisplay = Compare.isElementDisplay(web.signIn);
+		boolean eleDisplay = Validation.isElementDisplay(web.signIn);
 		if (eleDisplay) {
 			web.signIn.click();
 		} else
@@ -115,7 +115,7 @@ public class VerifyCountryRegion extends Base {
 		CountryRegionLanguagePage.selectCountry(global.getString("country"), driver);
 		// Country Verification
 		String countryTxt = countryLang.getCountryNameText(driver);
-		boolean txtDisplay = Compare.isTextDisplay(countryLang.countryRegion, countryTxt);
+		boolean txtDisplay = Validation.isTextDisplay(countryLang.countryRegion, countryTxt);
 		assertEquals(txtDisplay, true);
 	}
 

@@ -1,10 +1,10 @@
-2020-05-11 12:29:59 INFO  VerifyCountryRegion:55 - Starting server
-2020-05-11 12:31:26 INFO  VerifyCountryRegion:57 - Connecting with device
-2020-05-11 12:32:31 INFO  VerifyCountryRegion:77 - Welcome Page will display
-2020-05-11 12:32:34 INFO  VerifyCountryRegion:84 - Home Page will display
-2020-05-11 12:32:40 INFO  VerifyCountryRegion:89 - Main menu will display
-2020-05-11 12:32:49 INFO  VerifyCountryRegion:94 - Settings menu page will display
-2020-05-11 12:32:56 INFO  VerifyCountryRegion:99 - Country/Region & Language page will display
-2020-05-11 12:32:57 INFO  VerifyCountryRegion:104 - Country options will display with selected language
-2020-05-11 12:33:03 INFO  VerifyCountryRegion:133 - closing driver
-2020-05-11 12:33:06 INFO  VerifyCountryRegion:135 - stopping server
+2020-05-13 12:43:17 INFO  VerifyCountryRegion:52 - Starting server
+2020-05-13 12:43:32 INFO  VerifyCountryRegion:54 - Connecting with device
+2020-05-13 12:44:17 INFO  VerifyCountryRegion:74 - Welcome Page will display
+2020-05-13 12:44:21 INFO  VerifyCountryRegion:81 - Home Page will display
+2020-05-13 12:44:27 INFO  VerifyCountryRegion:86 - Main menu will display
+2020-05-13 12:44:38 INFO  VerifyCountryRegion:91 - Settings menu page will display
+2020-05-13 12:44:45 INFO  VerifyCountryRegion:96 - Country/Region & Language page will display
+2020-05-13 12:44:47 INFO  VerifyCountryRegion:101 - Country options will display with selected language
+2020-05-13 12:44:53 INFO  VerifyCountryRegion:130 - closing driver
+2020-05-13 12:44:57 INFO  VerifyCountryRegion:132 - stopping server

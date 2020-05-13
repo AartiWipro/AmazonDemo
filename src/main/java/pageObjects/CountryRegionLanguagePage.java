@@ -38,19 +38,6 @@ public class CountryRegionLanguagePage {
 	public static List<WebElement> country;
 
 	/**
-	 * The Method will verify the title of the page
-	 * 
-	 * @param ele  : will define WebElement value
-	 * @param text : will define string value
-	 * @return : will return the result in boolean.
-	 */
-	public static boolean verifyingCountryRegionLang(WebElement ele, String text) {
-		boolean result = false;
-		result = ele.getText().equals(text) ? true : false;
-		return result;
-	}
-
-	/**
 	 * The Method will verify the text of the element
 	 * 
 	 * @param driver : will define WebElement value

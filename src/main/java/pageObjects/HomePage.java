@@ -26,14 +26,4 @@ public class HomePage {
 	@AndroidFindBy(xpath = "//android.widget.EditText[@text ='Search']")
 	public WebElement homePageSearch;
 	
-	/**
-	 * @param ele : will define WebElement value
-	 * @param text : will define string value
-	 * @return  : will return the result in boolean.
-	 */
-	public static boolean verifyingHomePage(WebElement ele, String text) {
-		boolean result = false;		
-		result = ele.getText().equals(text) ? true : false;				
-		return result;
-	}
 }

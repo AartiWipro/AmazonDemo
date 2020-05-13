@@ -10,25 +10,11 @@ import io.appium.java_client.android.AndroidElement;
  *
  */
 
-public class Compare {
+public class Validation {
 	static AndroidDriver<AndroidElement> driver;
 
-	public Compare(AndroidDriver<AndroidElement> driver) {
-		Compare.driver = driver;
-	}
-
-	/**
-	 * The validatePageURL method is used for validating the page URL with actual value
-	 * @param ele :  will define WebElement value
-	 * @param expectedURL : will define String value
-	 * @return : will return the result in boolean
-	 */
-	public boolean validatePageURL(WebElement ele, String expectedURL) {
-		boolean result = false;
-		if (driver.getCurrentUrl().equalsIgnoreCase(expectedURL)) {
-			result = true;
-		}
-		return result;
+	public Validation(AndroidDriver<AndroidElement> driver) {
+		Validation.driver = driver;
 	}
 
 	/**
@@ -59,26 +45,5 @@ public class Compare {
 			e.printStackTrace();
 		}				
 		return result;
-	}
-
-	/**
-	 * The assertEquals method is used for validating two string values
-	 * @param exp : will define string value
-	 * @param act : will define string value
-	 * @return : will return the result in boolean
-	 */
-	public static boolean assertEquals(String exp, String act) {
-		boolean result = false;
-		result = exp.contains(act) ? true : false;			
-		return result;
-	}
-
-	/**
-	 * The assertFail method is used for checking fail status
-	 * The generateReport method is used for generating the Extent report
-	 * @return : will return the result in boolean
-	 */
-	public static boolean assertFail() {
-		return false;
 	}
 }

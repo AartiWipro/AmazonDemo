@@ -1,8 +1,6 @@
 package utilities;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -67,8 +65,7 @@ public class Utilities {
 		for (int i = 0; i < numberOfTimes; i++) {
 		try {
 		new TouchAction(driver)
-		.longPress(PointOption.point(anchor, startPoint)) //.press(point(anchor, startPoint)) if used press need proper waiting time
-		//.waitAction(waitOptions(ofMillis(miliseconds)))
+		.longPress(PointOption.point(anchor, startPoint)) 
 		.moveTo(PointOption.point(anchor, endPoint)).release().perform();
 		element = (AndroidElement) driver.findElement(by);
 		i = numberOfTimes;
