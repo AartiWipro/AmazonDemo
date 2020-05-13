@@ -15,5 +15,5 @@ public class Log4j {
 	public static void loadLog4J() {
 		String log4jConfPath = System.getProperty("user.dir") + "log4J.properties";
 		PropertyConfigurator.configure(log4jConfPath);
-	}
+	}			
 }

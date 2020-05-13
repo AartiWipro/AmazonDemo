@@ -13,6 +13,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
  */
 public class WelcomePage {
 
+	public AndroidDriver<AndroidElement> driver;
 	// Concatenate driver
 	public WelcomePage(AndroidDriver<AndroidElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);

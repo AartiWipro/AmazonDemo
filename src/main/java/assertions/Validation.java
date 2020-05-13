@@ -11,7 +11,7 @@ import io.appium.java_client.android.AndroidElement;
  */
 
 public class Validation {
-	static AndroidDriver<AndroidElement> driver;
+	public static AndroidDriver<AndroidElement> driver;
 
 	public Validation(AndroidDriver<AndroidElement> driver) {
 		Validation.driver = driver;

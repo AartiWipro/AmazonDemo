@@ -1,1 +1,1 @@
-2020-05-13 12:44:45:774 [Appium] Welcome to Appium v1.17.0
+2020-05-14 03:17:41:841 [Appium] Welcome to Appium v1.17.0

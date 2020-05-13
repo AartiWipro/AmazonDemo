@@ -4,22 +4,19 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.ResourceBundle;
-import org.apache.log4j.Logger;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import assertions.Validation;
-import base.Base;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
+import base.TestBase;
 import pageObjects.HomePage;
 import pageObjects.SettingsMenu;
 import pageObjects.CountryRegionLanguagePage;
 import pageObjects.HamburgerMainMenu;
 import pageObjects.WelcomePage;
 import utilities.Utilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * The VerifyCountryRegion class is used for setting Country/region as Australia
@@ -28,11 +25,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 
-public class VerifyCountryRegion extends Base {
+public class VerifyCountryRegion extends TestBase {
 
-	private static final Logger logger = Logger.getLogger(VerifyCountryRegion.class.getName());
-	public AndroidDriver<AndroidElement> driver;
-	public WebDriverWait wait;
+	public VerifyCountryRegion() throws IOException {
+		super();
+	}
+
+	WebDriverWait wait;
 	public ResourceBundle global;
 	WelcomePage web;
 	HomePage home;
@@ -42,17 +41,15 @@ public class VerifyCountryRegion extends Base {
 	CountryRegionLanguagePage countryLang;
 
 	/**
-	 * The method is use for starting the server,  driver and initializing the object for all classes
+	 * The method is use for starting the server, driver and initializing the object
+	 * for all classes
 	 * 
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
 	@BeforeTest
-	public void initialization() throws InterruptedException, IOException {
-		logger.info("Starting server");
-		service = StartServer();
-		logger.info("Connecting with device");
-		driver = Capabilities("amazonApplication");
+	public void setUp() throws InterruptedException, IOException {
+		initialization();
 		wait = new WebDriverWait(driver, 30);
 		global = ResourceBundle.getBundle("global");
 		web = new WelcomePage(driver);
@@ -63,8 +60,8 @@ public class VerifyCountryRegion extends Base {
 	}
 
 	/**
-	 * The test case  will select Country/region as Australia after changing
-	 * the default Country setting.
+	 * The test case will select Country/region as Australia after changing the
+	 * default Country setting.
 	 * 
 	 * @throws InterruptedException
 	 * @throws IOException
@@ -72,6 +69,7 @@ public class VerifyCountryRegion extends Base {
 	@Test(priority = 0)
 	public void setectCountry() throws InterruptedException, IOException {
 		logger.info("Welcome Page will display");
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(web.signIn));
 		boolean eleDisplay = Validation.isElementDisplay(web.signIn);
 		if (eleDisplay) {
@@ -89,8 +87,7 @@ public class VerifyCountryRegion extends Base {
 		assertEquals(mainMenuDisplay, true);
 		HamburgerMainMenu.selectMainMenuOption(global.getString("selectedMainMenuOption"));
 		logger.info("Settings menu page will display");
-		boolean settingDisplay = Utilities.verifyingPage(setMenu.settingsMenu,
-				global.getString("settingsMenuTitle"));
+		boolean settingDisplay = Utilities.verifyingPage(setMenu.settingsMenu, global.getString("settingsMenuTitle"));
 		assertEquals(settingDisplay, true);
 		SettingsMenu.selectSettingMenuOption(global.getString("selectedSettingsMenuOption"));
 		logger.info("Country/Region & Language page will display");
@@ -99,8 +96,7 @@ public class VerifyCountryRegion extends Base {
 		assertEquals(ConLangDisplay, true);
 		CountryRegionLanguagePage.selectConLanButton(global.getString("selectedConLanButton"));
 		logger.info("Country options will display with selected language");
-		boolean conViewDisplay = Utilities.verifyingPage(countryLang.countryRegionView,
-				global.getString("conRegView"));
+		boolean conViewDisplay = Utilities.verifyingPage(countryLang.countryRegionView, global.getString("conRegView"));
 		assertEquals(conViewDisplay, true);
 	}
 
@@ -126,10 +122,7 @@ public class VerifyCountryRegion extends Base {
 	 * @throws IOException
 	 */
 	@AfterTest
-	public void endSession() throws InterruptedException, IOException {
-		logger.info("closing driver");
-		closeDriver();
-		logger.info("stopping server");
-		service.stop();
+	public void tearDown() throws InterruptedException, IOException {
+		endSession();
 	}
 }

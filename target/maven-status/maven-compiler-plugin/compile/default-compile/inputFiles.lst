@@ -1,11 +1,11 @@
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\utilities\Utilities.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\pageObjects\CountryRegionLanguagePage.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\extentReports\ExtentReportNG.java
-C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\base\Base.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\pageObjects\SettingsMenu.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\pageObjects\HomePage.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\resources\Listeners.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\resources\Log4j.java
+C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\base\TestBase.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\pageObjects\HamburgerMainMenu.java
 C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\pageObjects\WelcomePage.java
-C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\assertions\Compare.java
+C:\Users\AA20005985\eclipse-MobileWorkspace\AmazonDemo\src\main\java\assertions\Validation.java
