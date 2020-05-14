@@ -21,7 +21,6 @@ public class LoginPage {
 
 	WebDriverWait wait;
 
-	// Concatenate driver
 	public LoginPage(AndroidDriver<AndroidElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 		wait = new WebDriverWait(driver, 30);

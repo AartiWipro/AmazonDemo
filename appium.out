@@ -1,5 +1,5 @@
-2020-05-14 16:57:03 INFO  TestBase:83 - Starting server
-2020-05-14 16:57:14 INFO  TestBase:85 - Connecting with device
-2020-05-14 16:58:00 INFO  TestBase:75 - Welcome Page will display
-2020-05-14 16:58:05 INFO  TestBase:96 - closing driver
-2020-05-14 16:58:09 INFO  TestBase:98 - stopping server
+2020-05-14 23:39:46 INFO  TestBase:84 - Starting server
+2020-05-14 23:39:55 INFO  TestBase:86 - Connecting with device
+2020-05-14 23:40:36 INFO  TestBase:74 - Welcome Page will display
+2020-05-14 23:41:14 INFO  TestBase:97 - closing driver
+2020-05-14 23:41:16 INFO  TestBase:99 - stopping server

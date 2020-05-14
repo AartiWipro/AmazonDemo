@@ -3,7 +3,7 @@
 <suite name="Suite">
 <listeners>
 <listener class-name = "resources.Listeners"/>
-<listener class-name="extentReports.ExtentReportNG"/>
+<listener class-name="extentReports.ExtentReport"/>
 </listeners>
   <test thread-count="5" name="AmazonAppTest">
     <classes>

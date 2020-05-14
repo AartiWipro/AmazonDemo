@@ -25,7 +25,6 @@ import utilities.Utilities;
  * @author Aarti
  *
  */
-
 public class VerifyCountryRegion extends TestBase {
 
 	public VerifyCountryRegion() throws IOException {

@@ -35,7 +35,7 @@ public class ExtentReport implements IReporter {
 	 */
 	   @Override
 	   public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-		htmlReporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "\\htmlReports\\result.html"));		
+		htmlReporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "\\reports\\result.html"));		
 		extent = new ExtentReports();
 
 		extent.attachReporter(htmlReporter);

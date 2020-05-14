@@ -21,7 +21,6 @@ import utilities.Utilities;
  */
 public class CountryRegionLanguagePage {
 
-	// Concatenate driver
 	public CountryRegionLanguagePage(AndroidDriver<AndroidElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}

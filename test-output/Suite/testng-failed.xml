@@ -3,18 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="resources.Listeners"/>
-    <listener class-name="extentReports.ExtentReportNG"/>
+    <listener class-name="extentReports.ExtentReport"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="AmazonAppTest(failed)">
     <classes>
       <class name="testCase.VerifyCountryRegion">
         <methods>
-          <include name="test123"/>
-          <include name="endSession"/>
-          <include name="verifyingCountry1"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setectCountry"/>
           <include name="verifyingCountry"/>
         </methods>
       </class> <!-- testCase.VerifyCountryRegion -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- AmazonAppTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

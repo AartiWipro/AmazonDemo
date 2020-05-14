@@ -6,16 +6,9 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.offset.PointOption;
-
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 
 /**
  * The Utilities class contains all the common methods related to web pages
@@ -25,7 +18,7 @@ import org.openqa.selenium.TakesScreenshot;
 public class Utilities {
 
 	public static AndroidDriver<AndroidElement> driver;
-
+	
 	/**
 	 * @param driver : will define WebElement value
 	 */
@@ -92,16 +85,5 @@ public class Utilities {
 		boolean result = false;		
 		result = ele.getText().equals(text) ? true : false;				
 		return result;
-	}
-	
-	/**
-	 * The method is use for stopping the server and closing the driver.
-	 * 
-	 * @param sc : will define string value
-	 * @throws IOException
-	 */
-	public static void GetScreenShot(String sc) throws IOException {
-		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screenShots\\" + sc + ".png"));
-	}
+	}	
 }
