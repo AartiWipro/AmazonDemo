@@ -22,7 +22,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
  * @author Aarti
  *
  */
-public class ExtentReportNG implements IReporter {
+public class ExtentReport implements IReporter {
 	private ExtentReports extent;
 	ExtentHtmlReporter htmlReporter;
 

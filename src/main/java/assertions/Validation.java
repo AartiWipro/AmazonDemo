@@ -46,4 +46,15 @@ public class Validation {
 		}				
 		return result;
 	}
+	
+	/**
+	 * The method is used for validating the WebElement which is displaying on web page 
+	 * @param ele : will define WebElement value
+	 * @return : will return the result in boolean
+	 */
+	public static boolean isElementSelected(WebElement ele) {
+		boolean result = false;
+		result = ele.isSelected() ? true : false;
+		return result;
+	}
 }

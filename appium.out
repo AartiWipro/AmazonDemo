@@ -1,10 +1,5 @@
-2020-05-14 03:16:45 INFO  TestBase:83 - Starting server
-2020-05-14 03:16:54 INFO  TestBase:85 - Connecting with device
-2020-05-14 03:17:31 INFO  TestBase:71 - Welcome Page will display
-2020-05-14 03:17:35 INFO  TestBase:79 - Home Page will display
-2020-05-14 03:17:40 INFO  TestBase:84 - Main menu will display
-2020-05-14 03:17:52 INFO  TestBase:89 - Settings menu page will display
-2020-05-14 03:17:59 INFO  TestBase:93 - Country/Region & Language page will display
-2020-05-14 03:18:00 INFO  TestBase:98 - Country options will display with selected language
-2020-05-14 03:18:06 INFO  TestBase:96 - closing driver
-2020-05-14 03:18:10 INFO  TestBase:98 - stopping server
+2020-05-14 16:57:03 INFO  TestBase:83 - Starting server
+2020-05-14 16:57:14 INFO  TestBase:85 - Connecting with device
+2020-05-14 16:58:00 INFO  TestBase:75 - Welcome Page will display
+2020-05-14 16:58:05 INFO  TestBase:96 - closing driver
+2020-05-14 16:58:09 INFO  TestBase:98 - stopping server

@@ -5,10 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -35,7 +32,7 @@ public class TestBase {
 	public TestBase() throws IOException {
 		prop = new Properties();
 		FileInputStream fs = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\java\\global.properties");
+				System.getProperty("user.dir") + "\\src\\main\\java\\config.properties");
 		prop.load(fs);
 	}
 
@@ -97,16 +94,5 @@ public class TestBase {
 		driver.quit();
 		logger.info("stopping server");
 		service.stop();
-	}
-
-	/**
-	 * The method is use for stopping the server and closing the driver.
-	 * 
-	 * @param sc : will define string value
-	 * @throws IOException
-	 */
-	public static void GetScreenShot(String sc) throws IOException {
-		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screenShots\\" + sc + ".png"));
 	}
 }

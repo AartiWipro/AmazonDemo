@@ -4,8 +4,7 @@ import java.io.IOException;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import base.TestBase;
+import utilities.Utilities;
 
 /**
  * The Listeners class contains all the executed test cases status
@@ -21,7 +20,7 @@ public class Listeners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		String sc = result.getName();
 		try {
-			TestBase.GetScreenShot(sc);
+			Utilities.GetScreenShot(sc);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

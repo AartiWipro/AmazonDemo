@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.VerifyCountryRegion2">
+      <class name="testCase.VerifyCountryRegion">
         <methods>
+          <include name="loginTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="setectCountry"/>
           <include name="verifyingCountry"/>
         </methods>
-      </class> <!-- testCase.VerifyCountryRegion2 -->
+      </class> <!-- testCase.VerifyCountryRegion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

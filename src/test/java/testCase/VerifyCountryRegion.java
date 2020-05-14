@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import assertions.Validation;
 import base.TestBase;
 import pageObjects.HomePage;
+import pageObjects.LoginPage;
 import pageObjects.SettingsMenu;
 import pageObjects.CountryRegionLanguagePage;
 import pageObjects.HamburgerMainMenu;
@@ -32,13 +33,15 @@ public class VerifyCountryRegion extends TestBase {
 	}
 
 	WebDriverWait wait;
-	public ResourceBundle global;
+	ResourceBundle global;
 	WelcomePage web;
 	HomePage home;
 	HamburgerMainMenu mainMenu;
 	Utilities util;
 	SettingsMenu setMenu;
 	CountryRegionLanguagePage countryLang;
+	LoginPage login;
+	ResourceBundle config;
 
 	/**
 	 * The method is use for starting the server, driver and initializing the object
@@ -57,8 +60,26 @@ public class VerifyCountryRegion extends TestBase {
 		mainMenu = new HamburgerMainMenu(driver);
 		setMenu = new SettingsMenu(driver);
 		countryLang = new CountryRegionLanguagePage(driver);
+		login = new LoginPage(driver);
+		config = ResourceBundle.getBundle("config");
 	}
 
+	/**
+	 * The method is for existing user login which having account already
+	 * 
+	 * @throws InterruptedException
+	 * @throws IOException
+	 */
+	@Test(priority = 0)
+	public void loginTest() throws InterruptedException, IOException {
+		logger.info("Welcome Page will display");
+		wait.until(ExpectedConditions.visibilityOf(web.signIn));		
+		boolean signInDisplay = Validation.isElementDisplay(web.signIn);
+		assertEquals(signInDisplay, true);
+		Utilities.Click(web.signIn);
+		login.userlogin(config.getString("userEmail"), config.getString("userPassword"), driver);	
+	}
+	
 	/**
 	 * The test case will select Country/region as Australia after changing the
 	 * default Country setting.
@@ -66,16 +87,8 @@ public class VerifyCountryRegion extends TestBase {
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
-	@Test(priority = 0)
-	public void setectCountry() throws InterruptedException, IOException {
-		logger.info("Welcome Page will display");
-		Thread.sleep(3000);
-		wait.until(ExpectedConditions.visibilityOf(web.signIn));
-		boolean eleDisplay = Validation.isElementDisplay(web.signIn);
-		if (eleDisplay) {
-			web.signIn.click();
-		} else
-			System.out.print("In Home screen");
+	@Test(dependsOnMethods = {"loginTest"})
+	public void setectCountry() throws InterruptedException, IOException {		
 		logger.info("Home Page will display");
 		wait.until(ExpectedConditions.visibilityOf(home.sidePanel));
 		boolean homePageDisplay = Utilities.verifyingPage(home.homePageSearch, global.getString("homePageTitle"));
@@ -106,10 +119,9 @@ public class VerifyCountryRegion extends TestBase {
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
-	@Test(priority = 1)
+	@Test(dependsOnMethods = {"setectCountry"})
 	public void verifyingCountry() throws InterruptedException, IOException {
 		CountryRegionLanguagePage.selectCountry(global.getString("country"), driver);
-		// Country Verification
 		String countryTxt = countryLang.getCountryNameText(driver);
 		boolean txtDisplay = Validation.isTextDisplay(countryLang.countryRegion, countryTxt);
 		assertEquals(txtDisplay, true);

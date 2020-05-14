@@ -20,8 +20,9 @@ public class WelcomePage {
 	}
 
 	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/skip_sign_in_button")
+	public WebElement skipSignIn;
+	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/sign_in_button")
 	public WebElement signIn;
 	@AndroidFindBy(accessibility = "Welcome")
 	public WebElement welcomePage;
-	
 }
