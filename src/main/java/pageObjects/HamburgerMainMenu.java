@@ -1,9 +1,9 @@
 package pageObjects;
 
 import java.util.List;
-
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -22,13 +22,13 @@ public class HamburgerMainMenu  {
 	}
 
 	@AndroidFindBy(xpath = "//*[@text ='Settings']")
-	public WebElement setting;
+	public MobileElement setting;
 	@AndroidFindBy(xpath = "//*[@text ='Australia Amazon.com.au']")
-	public WebElement ausRedioBtn;
+	public MobileElement ausRedioBtn;
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text ='Hello. Sign In']")
-	public WebElement hamburgerMenu;
+	public MobileElement hamburgerMenu;
 	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/drawer_item_title")
-	public static List <WebElement> mainMenuOptions;	
+	public static List <MobileElement> mainMenuOptions;	
 	
 	/**
 	 * The method will verify the menu options and will click on the selected option

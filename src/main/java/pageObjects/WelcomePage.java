@@ -1,7 +1,7 @@
 package pageObjects;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -20,9 +20,9 @@ public class WelcomePage {
 	}
 
 	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/skip_sign_in_button")
-	public WebElement skipSignIn;
+	public MobileElement skipSignIn;
 	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/sign_in_button")
-	public WebElement signIn;
+	public MobileElement signIn;
 	@AndroidFindBy(accessibility = "Welcome")
-	public WebElement welcomePage;
+	public MobileElement welcomePage;
 }

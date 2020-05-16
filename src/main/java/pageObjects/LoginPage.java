@@ -1,7 +1,7 @@
 package pageObjects;
 
 import static org.testng.Assert.assertEquals;
-import org.openqa.selenium.WebElement;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,15 +27,15 @@ public class LoginPage {
 	}
 
 	@AndroidFindBy(xpath = "//android.view.View[@text ='Login. Already a customer?']")
-	public WebElement loginRedio;
+	public MobileElement loginRedio;
 	@AndroidFindBy(id = "//android.widget.EditText[@id='ap_email_login']")
-	public WebElement emailVal;
+	public MobileElement emailVal;
 	@AndroidFindBy(xpath = "//android.widget.Button[@id='continue']")
-	public WebElement continueBtn;
+	public MobileElement continueBtn;
 	@AndroidFindBy(xpath = "//android.widget.EditText[@id='ap_password']")
-	public WebElement password;
+	public MobileElement password;
 	@AndroidFindBy(xpath = "//android.view.View[@text ='Login']")
-	public WebElement loginTitle;
+	public MobileElement loginTitle;
 
 	/**
 	 * The method is for existing user login which having account already

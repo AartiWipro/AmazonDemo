@@ -3,7 +3,7 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -26,20 +26,20 @@ public class CountryRegionLanguagePage {
 	}
 
 	@AndroidFindBy(xpath = "//android.widget.Button[contains(@text, 'Country/Region:')]")
-	public WebElement countryRegion;
+	public MobileElement countryRegion;
 	@AndroidFindBy(xpath = "//android.view.View[@text ='Country/Region & Language']")
-	public WebElement countryRegionLang;
+	public MobileElement countryRegionLang;
 	@AndroidFindBy(xpath = "//android.view.View[@text ='Country/Region']")
-	public WebElement countryRegionView;
+	public MobileElement countryRegionView;
 	@AndroidFindBy(className = "android.widget.Button")
-	public static List<WebElement> countryRegionBtn;
+	public static List<MobileElement> countryRegionBtn;
 	@AndroidFindBy(className = "android.widget.RadioButton")
-	public static List<WebElement> country;
+	public static List<MobileElement> country;
 
 	/**
 	 * The Method will verify the text of the element
 	 * 
-	 * @param driver : will define WebElement value
+	 * @param driver : will define MobileElement value
 	 * @return : will return the result in string.
 	 * @throws InterruptedException
 	 */

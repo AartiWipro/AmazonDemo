@@ -2,8 +2,8 @@ package pageObjects;
 
 import java.util.List;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -22,11 +22,11 @@ public class SettingsMenu  {
 	}
 
 	@AndroidFindBy(xpath = "//*[@text ='Country & Language']")
-	public WebElement countryLanguage;
+	public MobileElement countryLanguage;
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text ='Settings']")
-	public WebElement settingsMenu;
+	public MobileElement settingsMenu;
 	@AndroidFindBy(id = "com.amazon.mShop.android.shopping:id/drawer_item_title")
-	public static List <WebElement> settingMenuOptions;
+	public static List <MobileElement> settingMenuOptions;
 	
 	
 	/**

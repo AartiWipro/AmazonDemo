@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -61,15 +60,15 @@ public class TestBase {
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
-	public static void capabilities(String appName) throws InterruptedException, IOException {
+	public static void capabilities(String appName, String packageName, String activityName) throws InterruptedException, IOException {
 		File app = new File(System.getProperty("user.dir") + "\\app\\" + prop.get(appName));
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		String device = (String) prop.get("device");
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.amazon.mShop.android.shopping");
-		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.amazon.mShop.home.HomeActivity");
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, prop.get(packageName));
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, prop.get(activityName));
 		driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 	}
 
@@ -84,7 +83,7 @@ public class TestBase {
 		logger.info("Starting server");
 		startServer();
 		logger.info("Connecting with device");
-		capabilities("amazonApplication");
+		capabilities("amazonApplication", "appPackage", "appActivity");
 	}
 
 	/**

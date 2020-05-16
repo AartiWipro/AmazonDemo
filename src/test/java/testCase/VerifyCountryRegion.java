@@ -87,7 +87,7 @@ public class VerifyCountryRegion extends TestBase {
 	 * @throws IOException
 	 */
 	@Test(dependsOnMethods = {"loginTest"})
-	public void setectCountry() throws InterruptedException, IOException {		
+	public void selectCountry() throws InterruptedException, IOException {		
 		logger.info("Home Page will display");
 		wait.until(ExpectedConditions.visibilityOf(home.sidePanel));
 		boolean homePageDisplay = Utilities.verifyingPage(home.homePageSearch, global.getString("homePageTitle"));
@@ -118,7 +118,7 @@ public class VerifyCountryRegion extends TestBase {
 	 * @throws InterruptedException
 	 * @throws IOException
 	 */
-	@Test(dependsOnMethods = {"setectCountry"})
+	@Test(dependsOnMethods = {"selectCountry"})
 	public void verifyingCountry() throws InterruptedException, IOException {
 		CountryRegionLanguagePage.selectCountry(global.getString("country"), driver);
 		String countryTxt = countryLang.getCountryNameText(driver);

@@ -5,6 +5,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import base.TestBase;
+import runner.TestRunner;
 
 /**
  * The Listeners class contains all the executed test cases status
@@ -25,6 +26,7 @@ public class Listeners implements ITestListener {
 			TestBase.captureScreenShot(sceenShot);
 			ITestListener.super.onTestFailure(result);
 			System.out.println("TestCase failed and details are : " + result.getName());
+			TestRunner.rerunFailedTest(result.getName());			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

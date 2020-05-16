@@ -1,6 +1,6 @@
 package pageObjects;
 
-import org.openqa.selenium.WebElement;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -20,10 +20,10 @@ public class HomePage {
 	}
 
 	@AndroidFindBy(accessibility = "Navigation panel, button, double tap to open side panel")
-	public WebElement sidePanel;	
+	public MobileElement sidePanel;	
 	@AndroidFindBy(accessibility = "Home")
-	public WebElement homePage;
+	public MobileElement homePage;
 	@AndroidFindBy(xpath = "//android.widget.EditText[@text ='Search']")
-	public WebElement homePageSearch;
+	public MobileElement homePageSearch;
 	
 }
